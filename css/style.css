@@ -247,13 +247,14 @@
         left: 0;
     }
 
-    .right-pane,
-    /* .right-pane > div */ {
-        /*width: 420px;*/
-        padding: 0;
-        margin: 100px 0;
-        /*position: relative;*/
-        width: 98%;
+    .right-pane {
+        width: 100%;
+        margin: 70px 0;
+    }
+
+     .right-pane > div  {
+        margin: 0 auto;
+        width: 90%;
     }
 
     .name,
