@@ -15,9 +15,9 @@ function update_header() {
     var screenWidth = $(window).innerWidth();
 
     if (screenWidth < 300) {
-        $nameHeader.text('Naomi T. Shapiro');
+        $nameHeader.text(screenWidth + 'Naomi T. Shapiro');
     } else {
-        $nameHeader.text('Naomi Tachikawa Shapiro');
+        $nameHeader.text(screenWidth + 'Naomi Tachikawa Shapiro');
     }
 
 }
