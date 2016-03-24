@@ -79,10 +79,6 @@ function goToLink(page, speed) {
         hideMainDivs();
         $('.main > .' + page).fadeIn(speed);
         window.scrollTo(0, 0);
-
-        if (page === 'projects') {
-            renderProjectsWithMasonry();
-        }
     });
 }
 
@@ -96,7 +92,7 @@ function goToAbout() {
         window.scrollTo(0, 0);
     });
 
-    $('.about').on('click', function(event) {
+    $('.name-header').on('click', function(event) {
         event.preventDefault();
         highlight();
         hideMainDivs();
@@ -121,44 +117,11 @@ function renderAbout() {
 }
 
 
-// out of commission
-function renderProjectsWithMasonry() {
-    var $projects = $('.main .projects').imagesLoaded( function() {
-        // init Masonry after all images have loaded
-        $projects.masonry({
-            itemSelector: '.projects .project',
-            columnWidth: '.project-size',
-            gutter: '.gutter-size',
-            percentPosition: true,
-        });
-
-        // iterate across projects...
-        $('.projects .project').each(function() {
-
-            // position blackout behind image
-            var $blackout = $(this).find('.blackout');
-            var height = $(this).find('img').height();
-            var width = $(this).find('img').width();
-            $blackout.css({
-                height: height,
-                width: width,
-                top: -5 - height,
-            });
-
-            // activate listener
-            $blackout.bind('click', function(event) {
-                event.preventDefault();
-                // TODO: go to project
-            });
-        });
-    });
-}
-
-
 function hideMainDivs() {
     // everything in the right pane
     $('.main > div').css('display', 'none');
 }
+
 
 function highlight($link) {
     // // wipe empty hash from URL
