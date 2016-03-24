@@ -11,15 +11,15 @@ $(window).scroll(function(){
 });
 
 function update_header() {
-    // var $nameHeader = $('.name-header');
-    // var headerWidth = $nameHeader.width();
-    // var screenWidth = $(window).width();
+    var $nameHeader = $('.name-header');
+    var screenWidth = $(window).width();
 
-    // if (screenWidth <= headerWidth + 40) {
-    //     $nameHeader.text('TSNaomi' + screenWidth + headerWidth);
-    // } else {
-        // $nameHeader.text('Naomi Tachikawa Shapiro');
-    // }
+    if (screenWidth < 400) {
+        $nameHeader.text('Naomi T. Shapiro');
+    } else {
+        $nameHeader.text('Naomi Tachikawa Shapiro');
+    }
+
 }
 
 $(document).ready(update_header);
