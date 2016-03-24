@@ -25,43 +25,10 @@ function update_header() {
 $(document).ready(update_header);
 $(window).resize(update_header);
 
-// sticky header
-// $(window).scroll(function() {
-//     // if ($(window).scrollTop() > 100 && $(window).width() < 420) {
-//     if ($(window).scrollTop() > 100) {
-//         $('.toc').addClass('sticky');
-//     } else {
-//         $('.toc').removeClass('sticky');
-//     }
-// });
-
 // mobile navigation
 $('.mobile-toggle, .link').click(function() {
     $('.toc').toggleClass('open-nav');
-    // if ($('.toc').hasClass('open-nav')) {
-    //     $('.toc').removeClass('open-nav');
-    // } else {
-    //     $('.toc').addClass('open-nav');
-    // }
 });
-
-// $('.link').click(function() {
-//     if ($('.toc').hasClass('open-nav')) {
-//         // $('.navigation').removeClass('open-nav');
-//         $('.toc').removeClass('open-nav');
-//     }
-// });
-
-// navigation scroll
-// $('nav a').click(function(event) {
-//     var id = $(this).attr("href");
-//     var offset = 70;
-//     var target = $(id).offset().top - offset;
-//     $('html, body').animate({
-//         scrollTop: target
-//     }, 500);
-//     event.preventDefault();
-// });
 
 // populate the main div on page load
 renderAbout();

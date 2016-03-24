@@ -34,8 +34,9 @@
     }
 
 /* ---- everywhere ---- */
-    div {
+    html {
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-text-size-adjust: 100%
     }
 
     .container {
@@ -325,7 +326,7 @@
     .mobile-toggle span {
         width: 18px;
         height: 2px;
-        margin: 0 0 4px 15px;
+        margin: 0 0 4px 18px;
         background: #333333;
         display: block;
         -webkit-transform: rotate(0deg);
