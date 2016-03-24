@@ -208,12 +208,12 @@
 
     .left-pane {
         left: 0;
-        width: 200px;
+        width: 180px;
     }
 
     .right-pane {
-        width: 440px;
-        margin-left: 200px;
+        width: 470px;
+        margin-left: 180px;
     }
 
     .toc {
@@ -364,7 +364,6 @@
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
     }
-
 }
 
 /* ---- highlight ---- */
