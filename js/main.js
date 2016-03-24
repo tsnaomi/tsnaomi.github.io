@@ -3,8 +3,8 @@ $(window).scroll(function(){
     var width = $(window).width();
     var $toc = $('.toc');
     var left;
-
-    if (420 < width && width <= 721) {
+//  && width <= 721
+    if (420 < width) {
         left = 0;
         $toc.css('left', left - $(window).scrollLeft());
     }

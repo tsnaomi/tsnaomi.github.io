@@ -39,6 +39,10 @@
         -webkit-text-size-adjust: 100%
     }
 
+    body {
+        /*margin: auto;*/
+    }
+
     .container {
         color: #333333;
         margin: 10% auto;
@@ -139,13 +143,16 @@
 
 /* ---- fullscreen ---- */
 @media (min-width: 721px) {
-    /*body {
-        min-width: 1440px;
-    }*/
+    body {
+        /*min-width: 1440px;*/
+        /*width: 1024px;*/
+        width: 1440px;
+    }
 
     .container {
-        width: 90%;
-        max-width: 1152px;
+        /*width: 90%;*/
+        width: 1000px;
+        /*max-width: 1152px;*/
     }
 
     .name-header,
@@ -159,15 +166,19 @@
     }
 
     .left-pane {
-        margin-left: -20px;
-        width: 250px;
+        /*margin-left: -20px;*/
+        left: 0;
+        width: 397px;
     }
 
     .right-pane {
-        float: right;
-        width: calc(100% - 260px);
-        min-width: 250px;
+        /*float: right;*/
+        /*width: calc(100% - 260px);*/
+        /*min-width: 250px;*/
         /*margin-left: 60px;*/
+        /*margin-right: 58px;*/
+        margin-left: 253px;
+        width: 690px;
     }
 
     .toc {
