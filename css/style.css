@@ -319,12 +319,11 @@
     }
 
     .mobile-toggle span {
-        width: 18px;
+        width: 24px;
         height: 2px;
         margin: 0 0 4px;
         background: #333333;
         display: block;
-        transform-origin: 0 50%;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
@@ -335,11 +334,21 @@
         transition: .25s ease-in-out;
     }
 
+
+    .mobile-toggle span:nth-child(1) {
+        transform-origin: top left;
+    }
+
+    .mobile-toggle span:nth-child(3) {
+        transform-origin: bottom left;
+    }
+
     .open-nav .mobile-toggle span:nth-child(2) {
         width: 0%;
     }
 
     .open-nav .mobile-toggle span:nth-child(1) {
+        width: 18px;
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
@@ -347,6 +356,7 @@
     }
 
     .open-nav .mobile-toggle span:nth-child(3) {
+        width: 18px;
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
