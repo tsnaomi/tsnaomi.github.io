@@ -12,10 +12,10 @@ $(window).scroll(function(){
 
 function update_header() {
     var $nameHeader = $('.name-header');
-    var screenWidth = $(window).width();
+    var screenWidth = $(window).innerWidth();
 
     if (screenWidth < 300) {
-        $nameHeader.text('Naomi T. Shapiro' + screenWidth);
+        $nameHeader.text('Naomi T. Shapiro');
     } else {
         $nameHeader.text('Naomi Tachikawa Shapiro');
     }
