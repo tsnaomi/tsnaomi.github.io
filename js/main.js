@@ -14,7 +14,7 @@ function update_header() {
     var $nameHeader = $('.name-header');
     var screenWidth = $(window).innerWidth();
 
-    if (screenWidth < 300) {
+    if (screenWidth < 350) {
         $nameHeader.text(screenWidth + 'Naomi T. Shapiro');
     } else {
         $nameHeader.text(screenWidth + 'Naomi Tachikawa Shapiro');
@@ -24,7 +24,6 @@ function update_header() {
 
 $(document).ready(update_header);
 $(window).resize(update_header);
-
 
 // sticky header
 // $(window).scroll(function() {
