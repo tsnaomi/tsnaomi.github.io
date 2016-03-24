@@ -15,11 +15,11 @@ function update_header() {
     var headerWidth = $nameHeader.width();
     var screenWidth = $(window).width();
 
-    if (screenWidth <= headerWidth + 40) {
-        $nameHeader.text('TSNaomi' + screenWidth + headerWidth);
-    } else {
-        $nameHeader.text('Naomi Tachikawa Shapiro' + screenWidth + headerWidth);
-    }
+    // if (screenWidth <= headerWidth + 40) {
+    //     $nameHeader.text('TSNaomi' + screenWidth + headerWidth);
+    // } else {
+        $nameHeader.text('Naomi Tachikawa Shapiro');
+    // }
 }
 
 $(document).ready(update_header);
