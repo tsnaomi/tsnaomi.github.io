@@ -248,11 +248,11 @@
     }
 
     .right-pane,
-    .right-pane > div {
+    /* .right-pane > div */ {
         /*width: 420px;*/
         padding: 0;
-        margin: 0;
-        position: relative;
+        margin: 100px 0;
+        /*position: relative;*/
         width: 98%;
     }
 
