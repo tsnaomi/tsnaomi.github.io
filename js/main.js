@@ -19,6 +19,7 @@ function update_header() {
     } else {
         $nameHeader.text('Naomi Tachikawa Shapiro');
     }
+
 }
 
 $(document).ready(update_header);
