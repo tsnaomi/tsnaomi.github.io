@@ -234,7 +234,8 @@
 /* ---- tinyscreen ---- */
 @media (max-width: 420px) {
     body {
-        width: 420px;
+        /*width: 420px;*/
+        width: 100%;
     }
 
     .left-pane {
