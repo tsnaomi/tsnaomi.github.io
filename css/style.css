@@ -238,6 +238,10 @@
         width: 100%;
     }
 
+    .container {
+        margin: 0 auto;
+    }
+
     .left-pane {
         top: 0;
         left: 0;
@@ -248,7 +252,7 @@
         /*width: 420px;*/
         padding: 0;
         margin: 0;
-        /*position: relative;*/
+        position: relative;
         width: 98%;
     }
 
