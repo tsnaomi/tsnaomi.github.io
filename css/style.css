@@ -265,11 +265,11 @@
     .name-header {
         top: 0;
         left: 0;
-        width: calc(100% - 60px);
+        /*width: calc(100% - 60px);*/
         padding: 20px 12px 0;
         text-align: left;
         /*padding-left: 27px;*/
-        font-size: 18px;
+        font-size: 30px;
         /*text-transform: uppercase;*/
         line-height: 0px;
         display: block;
