@@ -11,12 +11,13 @@ $(window).scroll(function(){
 });
 
 function update_header() {
-    var width = $(window).width();
     var $nameHeader = $('.name-header');
+    var headerWidth = $nameHeader.width();
+    var screenWidth = $(window).width();
 
-    if (width < 300) {
-        $nameHeader.text('T. S. Naomi');
-    } else if (width <= 420) {
+    if (screenWidth <= headerWidth + 40) {
+        $nameHeader.text('TSNaomi');
+    } else {
         $nameHeader.text('Naomi Tachikawa Shapiro');
     }
 }
