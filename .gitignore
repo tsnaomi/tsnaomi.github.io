@@ -1,0 +1,6 @@
+*.pyc
+
+server.py
+.jshintrc
+
+html/

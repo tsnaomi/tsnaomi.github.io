@@ -1,0 +1,377 @@
+/* ---- fonts ---- */
+    @font-face {
+        font-family: Apercu Mono;
+        src: url(./fonts/apercu-mono-webfont.ttf);
+    }
+
+    @font-face {
+        font-family: Andika;
+        src: url(./fonts/andika-new-basic-r.ttf);
+    }
+
+    @font-face {
+        font-family: IPA Font;
+        src: url(./fonts/ipa-font.ttf);
+    }
+
+    @font-face {
+        font-family: 'Helvetica Neue Thin';
+        src: url(./fonts/helvetica-neue-thin.ttf);
+    }
+
+    @font-face {
+        font-family: 'Helvetica Neue';
+        src: url(./fonts/helvetica-neue.ttf);
+    }
+
+    @font-face {
+        font-family: 'Helvetica Neue Ultra Light';
+        src: url(./fonts/helvetica-neue-ultralight.ttf);
+    }
+
+    body {
+        font-family: 'Helvetica Neue Thin';
+    }
+
+/* ---- everywhere ---- */
+    .container {
+        color: #333333;
+        margin: 10% auto;
+        line-height: 1.428571429;
+    }
+
+    .toc {
+        font-size: 16px;
+        cursor: default;
+        z-index: 10;
+    }
+
+    .main {
+        margin-bottom: 140px;
+    }
+
+    .ipa {
+        font-family: Andika;
+        font-family: Aboriginal;
+        font-family: IPA Font;
+    }
+
+    .name,
+    .link,
+    .hyperlink,
+    .mobile-toggle  {
+        cursor: url(./cursors/aerowedge.cur), pointer;
+    }
+
+    .name,
+    .name-header {
+        font-family: Apercu Mono;
+    }
+
+    .name {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .slash {
+        font-size: 17px;
+        font-family: 'Helvetica Neue Ultra Light';
+        margin: 0 8px;
+    }
+
+    .link:hover,
+    .hyperlink:hover {
+        color: #c7c7c7;
+        color: #92A8D1; /* serenity */
+    }
+
+    .br {
+        height: 38px;
+    }
+
+    .small-br {
+        height: 8px;
+    }
+
+    .main > div {
+        position: relative;
+        top: 0;
+        display: none;
+    }
+
+/* ---- about ---- */
+    .about img {
+        height: 144px;
+        padding: 0;
+        margin: 8px 20px 10px 0;
+        border: 1px solid #333333;
+        float: left;
+    }
+
+/* ---- cv / resume ---- */
+    .main > div {
+        font-size: 14px;
+        /*width: 84%;*/
+        /*margin: 9px 20px;*/
+    }
+
+    .main div p {
+        margin: 0;
+        padding: 8px 0;
+    }
+
+    .section {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 4px;
+    }
+
+    .bold {
+        font-family: 'Helvetica Neue';
+    }
+
+
+/* ---- fullscreen ---- */
+@media (min-width: 721px) {
+    /*body {
+        min-width: 1440px;
+    }*/
+
+    .container {
+        width: 90%;
+        max-width: 1152px;
+    }
+
+    .name-header,
+    .mobile-toggle {
+        display: none;
+    }
+
+    .left-pane,
+    .right-pane {
+        display: inline-block;
+    }
+
+    .left-pane {
+        margin-left: -20px;
+        width: 250px;
+    }
+
+    .right-pane {
+        float: right;
+        width: calc(100% - 260px);
+        min-width: 250px;
+        /*margin-left: 60px;*/
+    }
+
+    .toc {
+        position: fixed;
+        text-align: right;
+    }
+
+    .main > div {
+        top: 0;
+    }
+
+    .visible-sm {
+        display: none;
+    }
+}
+
+
+/* ---- halfscreen ---- */
+@media (max-width: 720px) {
+    body {
+        width: 720px;
+    }
+
+    .container {
+        width: 676px;
+        margin: 10% auto;
+    }
+
+    .name-header,
+    .mobile-toggle,
+    .visible-sm {
+        display: none;
+    }
+
+    .left-pane,
+    .right-pane {
+        display: inline-block;
+    }
+
+    .left-pane {
+        left: 0;
+        width: 200px;
+    }
+
+    .right-pane {
+        width: 440px;
+        margin-left: 200px;
+    }
+
+    .toc {
+        text-align: right;
+        position: fixed;
+    }
+
+    .name {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .links {
+        font-size: 14.5px;
+    }
+
+    .cv,
+    .resume {
+        margin-top: 10px;
+    }
+}
+
+/* ---- tinyscreen ---- */
+@media (max-width: 420px) {
+    body {
+        width: 420px;
+    }
+
+    .left-pane {
+        top: 0;
+        left: 0;
+    }
+
+    .right-pane,
+    .right-pane > div {
+        /*width: 420px;*/
+        padding: 0;
+        margin: 0;
+        /*position: relative;*/
+        width: 90%;
+    }
+
+    .name,
+    .links .slash {
+        display: none;
+    }
+
+    .mobile-toggle,
+    .visible-sm {
+        display: block;
+    }
+
+    .name-header {
+        top: 0;
+        left: 0;
+        width: calc(100% - 60px);
+        padding: 20px 12px 0;
+        text-align: left;
+        /*padding-left: 27px;*/
+        font-size: 18px;
+        /*text-transform: uppercase;*/
+        line-height: 0px;
+        display: block;
+        word-spacing: 0;
+    }
+
+    .toc {
+        position: fixed;
+        max-height: 0px;
+        z-index: 999;
+        width: 100%;
+        overflow: hidden;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        padding-bottom: 40px;
+        background-color: rgba(255, 255, 255, 0.95);
+        top: 0px;
+        border-bottom: 1px solid #c7c7c7;
+    }
+
+    .links {
+        padding-top: 20px;
+        float: right;
+        width: 100%;
+        text-align: center;
+        text-transform: lowercase;
+    }
+
+    .open-nav {
+        max-height: 400px;
+    }
+
+    .open-nav .mobile-toggle {
+       /* transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);*/
+    }
+
+    .mobile-toggle {
+        display: block;
+        margin-top: 12px;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        width: 30px;
+        -webkit-transition: all 200ms ease-in;
+        -moz-transition: all 200ms ease-in;
+        transition: all 200ms ease-in;
+    }
+
+    .mobile-toggle span {
+        width: 24px;
+        height: 2px;
+        margin-bottom: 12px;
+        background: #333333;
+        display: block;
+    }
+
+    .open-nav .mobile-toggle span:first-child {
+        transition: 0.5s;
+        /*transform: rotateZ(45deg) scaleX(1.25) translate(12px, 12px);*/
+        transform: rotateZ(45deg) scaleX(1.25) translate(6px, 6px);
+    }
+
+    .open-nav .mobile-toggle span:last-child {
+        transition: 0.5s;
+        transform: rotateZ(-45deg) scaleX(1.25) translate(3px, -2px);
+    }
+}
+
+/* ---- highlight ---- */
+    .radiant-orchid,
+    .radiant-orchid:hover {
+        color: #B565A7;  /* 2014 Pantone color of the year */
+    }
+
+    .marsala,
+    .marsala:hover {
+        color: #AD655F;  /* 2015 Pantone color of the year */
+    }
+
+    .rose-quartz,
+    .rose-quartz:hover {
+        color: #F7CAC9;  /* 2016 Pantone color of the year */
+    }
+
+    .serenity,
+    .serenity:hover {
+        color: #92A8D1;  /* 2016 Pantone color of the year */
+    }
+
+    .limpet-shell,
+    .limpet-shell:hover {
+        color: #98DDDE;
+    }
+
+    .pantone-305c,
+    .pantone-305c:hover {
+        color: #66ccff
+    }
+
+    .highlight,
+    .highlight:hover {
+        color: #333333;
+        border-bottom: 1px solid #333333;
+        border-bottom: 0.5px solid #92A8D1;
+    }
