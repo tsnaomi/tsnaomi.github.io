@@ -18,10 +18,7 @@ function update_header() {
         $nameHeader.text('Naomi T. Shapiro');
     } else {
         $nameHeader.text('Naomi Tachikawa Shapiro');
-        $('.ipa').append($('<span> ' + screenWidth + '</span>'));
-        console.log(screenWidth, $('.ipa')[0]);
     }
-
 }
 
 $(document).ready(update_header);
