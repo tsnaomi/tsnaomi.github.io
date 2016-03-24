@@ -34,6 +34,10 @@
     }
 
 /* ---- everywhere ---- */
+    div {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
     .container {
         color: #333333;
         margin: 10% auto;
@@ -235,7 +239,6 @@
 /* ---- tinyscreen ---- */
 @media (max-width: 420px) {
     body {
-        /*width: 420px;*/
         width: 100%;
     }
 
@@ -250,11 +253,11 @@
 
     .right-pane {
         width: 100%;
-        margin: 60px 0;
+        margin: 60px 0 80px;
     }
 
      .right-pane > div  {
-        margin: 0 auto;
+        margin: 10px auto 0;
         width: 94%;
     }
 
@@ -304,9 +307,10 @@
     }
 
     .mobile-toggle {
-        padding-top: 20px;
+        width: 50px;
+        height: 52px;
         position: absolute;
-        right: 12px;
+        right: 0;
         top: 0;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -319,9 +323,9 @@
     }
 
     .mobile-toggle span {
-        width: 24px;
+        width: 18px;
         height: 2px;
-        margin: 0 0 4px;
+        margin: 0 0 4px 20px;
         background: #333333;
         display: block;
         -webkit-transform: rotate(0deg);
@@ -334,9 +338,9 @@
         transition: .25s ease-in-out;
     }
 
-
     .mobile-toggle span:nth-child(1) {
         transform-origin: top left;
+        margin-top: 20px;
     }
 
     .mobile-toggle span:nth-child(3) {
@@ -348,7 +352,6 @@
     }
 
     .open-nav .mobile-toggle span:nth-child(1) {
-        width: 18px;
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
@@ -356,7 +359,6 @@
     }
 
     .open-nav .mobile-toggle span:nth-child(3) {
-        width: 18px;
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
