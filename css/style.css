@@ -263,23 +263,23 @@
     }
 
     .name-header {
-        top: 0;
-        left: 0;
+        /*top: 0;*/
+        /*left: 0;*/
         /*width: calc(100% - 60px);*/
-        padding: 20px 12px 0;
+        /*padding: 20px 12px 0;*/
         text-align: left;
         /*padding-left: 27px;*/
         font-size: 34px;
         /*text-transform: uppercase;*/
-        line-height: 0px;
+        /*line-height: 0px;*/
         display: block;
         word-spacing: 0;
-        height: 60px;
+        /*height: 100px;*/
     }
 
     .toc {
         position: fixed;
-        max-height: 0px;
+        max-height: 12px;
         z-index: 999;
         width: 100%;
         overflow: hidden;
