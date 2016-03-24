@@ -214,6 +214,7 @@
     .right-pane {
         width: 470px;
         margin-left: 180px;
+        font-size: 14px !important;
     }
 
     .toc {
