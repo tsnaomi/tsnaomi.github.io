@@ -11,14 +11,14 @@ $(window).scroll(function(){
 });
 
 function update_header() {
-    var $nameHeader = $('.name-header');
-    var headerWidth = $nameHeader.width();
-    var screenWidth = $(window).width();
+    // var $nameHeader = $('.name-header');
+    // var headerWidth = $nameHeader.width();
+    // var screenWidth = $(window).width();
 
     // if (screenWidth <= headerWidth + 40) {
     //     $nameHeader.text('TSNaomi' + screenWidth + headerWidth);
     // } else {
-        $nameHeader.text('Naomi Tachikawa Shapiro');
+        // $nameHeader.text('Naomi Tachikawa Shapiro');
     // }
 }
 
