@@ -180,7 +180,7 @@
 
 
 /* ---- halfscreen ---- */
-@media (max-width: 720px) {
+@media (min-width: 421px) and (max-width: 720px) {
     body {
         width: 720px;
     }
