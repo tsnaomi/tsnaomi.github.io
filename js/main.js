@@ -15,7 +15,7 @@ function update_header() {
     var screenWidth = $(window).width();
 
     if (screenWidth < 410) {
-        $nameHeader.text('Naomi T. Shapiro');
+        $nameHeader.text('Naomi T. Shapiro' + screenWidth);
     } else {
         $nameHeader.text('Naomi Tachikawa Shapiro');
     }
