@@ -36,20 +36,21 @@ $(window).resize(update_header);
 // });
 
 // mobile navigation
-$('.mobile-toggle').click(function() {
-    if ($('.toc').hasClass('open-nav')) {
-        $('.toc').removeClass('open-nav');
-    } else {
-        $('.toc').addClass('open-nav');
-    }
+$('.mobile-toggle, .link').click(function() {
+    $('.toc').toggleClass('open-nav');
+    // if ($('.toc').hasClass('open-nav')) {
+    //     $('.toc').removeClass('open-nav');
+    // } else {
+    //     $('.toc').addClass('open-nav');
+    // }
 });
 
-$('.link').click(function() {
-    if ($('.toc').hasClass('open-nav')) {
-        // $('.navigation').removeClass('open-nav');
-        $('.toc').removeClass('open-nav');
-    }
-});
+// $('.link').click(function() {
+//     if ($('.toc').hasClass('open-nav')) {
+//         // $('.navigation').removeClass('open-nav');
+//         $('.toc').removeClass('open-nav');
+//     }
+// });
 
 // navigation scroll
 // $('nav a').click(function(event) {
