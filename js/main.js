@@ -74,7 +74,7 @@ function renderAbout() {
     $('.main > .about').fadeIn('fast');
 
     // unmask email address
-    var xyz = ['hello', 'tsnaomi', 'net', '.', '@'];
+    var xyz = ['tsnaomi', 'stanford', 'edu', '.', '@'];
     var abc = xyz[0] + xyz[4] + xyz[1] + xyz[3] + xyz[2];
 
     // scramble and unscramble!
