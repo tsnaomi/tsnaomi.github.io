@@ -1,3 +1,5 @@
+var TRANSITION_SPEED = 800;
+
 // enable absolute horizontal scroll
 $(window).scroll(function(){
     var width = $(window).width();
@@ -8,6 +10,11 @@ $(window).scroll(function(){
         left = 0;
         $toc.css('left', left - $(window).scrollLeft());
     }
+
+    // if ($('body').width() >= 1000) {
+    //     console.log($toc.css('top'));
+    //     $toc.css('top', 0 + $(window).scrollTop());
+    // }
 });
 
 function update_header() {
@@ -34,8 +41,8 @@ $('.mobile-toggle, .link').click(function() {
 renderAbout();
 
 // set up the various listeners
-goToLink('cv', 'slow');
-goToLink('resume', 'slow');
+goToLink('cv', TRANSITION_SPEED);
+goToLink('resume', TRANSITION_SPEED);
 goToAbout();
 
 
@@ -71,7 +78,7 @@ function goToAbout() {
 
 
 function renderAbout() {
-    $('.main > .about').fadeIn('fast');
+    $('.main > .about').fadeIn(TRANSITION_SPEED);
 
     // unmask email address
     var xyz = ['tsnaomi', 'stanford', 'edu', '.', '@'];
