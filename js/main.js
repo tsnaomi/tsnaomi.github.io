@@ -1,4 +1,4 @@
-var TRANSITION_SPEED = 300;
+var TRANSITION_SPEED = 100;
 
 // enable absolute horizontal scroll
 $(window).scroll(function(){
