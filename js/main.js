@@ -1,114 +1,86 @@
-var TRANSITION_SPEED = 100;
+(function() {
+    var TRANSITION_SPEED = 100;
 
-// enable absolute horizontal scroll
-$(window).scroll(function(){
-    var width = $(window).width();
-    var $toc = $('.toc');
-    var left;
-//  && width <= 721
-    if (420 < width) {
-        left = 0;
-        $toc.css('left', left - $(window).scrollLeft());
+    $(document).ready(updateMobileHeader);
+    $(window).resize(updateMobileHeader);
+
+    // populate the main div on page load
+    renderAbout();
+
+    // set up the various listeners
+    goToLink('cv');
+    goToLink('resume');
+    goToLink('about');
+    goToAbout();
+    toggleNavigation();
+
+    function goToLink(page) {
+        var $link = $('.link.' + page);
+
+        $link.on('click', function(event) {
+            event.preventDefault();
+            transitionPage($link);
+            $('.main > .' + page).fadeIn(TRANSITION_SPEED);
+        });
+
+        if (page === 'about') {
+            renderAbout();
+        }
     }
 
-    // if ($('body').width() >= 1000) {
-    //     console.log($toc.css('top'));
-    //     $toc.css('top', 0 + $(window).scrollTop());
-    // }
-});
-
-function update_header() {
-    var $nameHeader = $('.name-header');
-    var screenWidth = $(window).innerWidth();
-
-    if (screenWidth < 350) {
-        $nameHeader.text('Naomi T. Shapiro');
-    } else {
-        $nameHeader.text('Naomi Tachikawa Shapiro');
+    function goToAbout() {
+        $('.name, .mobile-header').on('click', function(event) {
+            event.preventDefault();
+            transitionPage();
+            renderAbout();
+        });
     }
 
-}
+    function transitionPage($link) {
+        // remove existing highlights
+        $('.link').removeClass('highlight');
 
-$(document).ready(update_header);
-$(window).resize(update_header);
+        // highlight $link if it is not undefined
+        if ($link) {
+            $link.addClass('highlight');
+        }
 
-// mobile navigation
-$('.mobile-toggle, .link').click(function() {
-    $('.toc').toggleClass('open-nav');
-});
+        // hide everything in the right pane
+        $('.main > div').css('display', 'none');
 
-// populate the main div on page load
-renderAbout();
-
-// set up the various listeners
-goToLink('cv', TRANSITION_SPEED);
-goToLink('resume', TRANSITION_SPEED);
-goToAbout();
-
-
-function goToLink(page, speed) {
-    var $link = $('.link.' + page);
-    $link.on('click', function(event) {
-        event.preventDefault();
-        highlight($link);
-        hideMainDivs();
-        $('.main > .' + page).fadeIn(speed);
+        // scroll to the top of the page
         window.scrollTo(0, 0);
-    });
-}
-
-
-function goToAbout() {
-    $('.name').on('click', function(event) {
-        event.preventDefault();
-        highlight();
-        hideMainDivs();
-        renderAbout();
-        window.scrollTo(0, 0);
-    });
-
-    $('.name-header').on('click', function(event) {
-        event.preventDefault();
-        highlight();
-        hideMainDivs();
-        renderAbout();
-        window.scrollTo(0, 0);
-    });
-}
-
-
-function renderAbout() {
-    $('.main > .about').fadeIn(TRANSITION_SPEED);
-
-    // unmask email address
-    var xyz = ['tsnaomi', 'stanford', 'edu', '.', '@'];
-    var abc = xyz[0] + xyz[4] + xyz[1] + xyz[3] + xyz[2];
-
-    // scramble and unscramble!
-    $('.email').shuffleLetters({
-        text: abc,
-        fps: 30,
-    });
-}
-
-
-function hideMainDivs() {
-    // everything in the right pane
-    $('.main > div').css('display', 'none');
-}
-
-
-function highlight($link) {
-    // // wipe empty hash from URL
-    // history.pushState('', document.title, window.location.pathname);
-
-    var highlight = 'highlight';
-
-    // remove existing highlights
-    $('.link').removeClass(highlight);
-
-    // highlight $link if it is not undefined
-    if ($link) {
-        $link.addClass(highlight);
     }
-}
+
+    function renderAbout() {
+        $('.main > .about').fadeIn(TRANSITION_SPEED);
+
+        // unmask email address
+        var xyz = ['tsnaomi', 'stanford', 'edu', '.', '@'];
+        var abc = xyz[0] + xyz[4] + xyz[1] + xyz[3] + xyz[2];
+
+        // scramble and unscramble!
+        $('.email').shuffleLetters({
+            text: abc,
+            fps: 30,
+        });
+    }
+
+    function toggleNavigation() {
+        $('.mobile-toggle, .link').on('click', function(event) {
+            event.preventDefault();
+            $('.toc').toggleClass('open-nav');
+        });
+    }
+
+    function updateMobileHeader() {
+        var screenWidth = $(window).innerWidth();
+        var $mobileHeader = $('.mobile-header');
+
+        if (screenWidth < 350) {
+            $mobileHeader.text('Naomi T. Shapiro');
+        } else {
+            $mobileHeader.text('Naomi Tachikawa Shapiro');
+        }
+    }
+})();

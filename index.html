@@ -14,32 +14,36 @@
 
     <body>
         <div class='container'>
-            <div class='left-pane toc sticky'>
-                <div class='name-header'></div>
-                <div class='name'>Naomi<br>&nbsp;Tachikawa<br>&nbsp;Shapiro<br></div>
+            <div class='left-pane toc'>
+                <div class='mobile-header'></div>
+                <div class='name'>Naomi<br>Tachikawa<br>Shapiro<br></div>
                 <div class='mobile-toggle'>
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
                 <div class='links'>
+                    <div class='visible-sm small-br'></div>
+                    <span class='link about visible-sm'>about</span>
+                    <div class='visible-sm small-br'></div>
                     <span class='link cv' title='for the ivory tower'>CV</span>
                     <span class='slash'> // </span>
                     <div class='visible-sm small-br'></div>
                     <span class='link resume' title='for industry'>R&eacute;sum&eacute;</span>
                     <div class='small-br'></div>
-                    <span class='link' onclick='window.open("https://github.com/tsnaomi", "_blank")'>GitHub</span><br>
+                    <a href='https://github.com/tsnaomi' target='_blank'>GitHub</a>
+                    <br>
                     <div class='small-br'></div>
-                    <span class='link' onclick='window.open("https://linkedin.com/in/tsnaomi", "_blank")'>LinkedIn</span><br>
+                    <a href='https://linkedin.com/in/tsnaomi' target='_blank'>LinkedIn</a>
+                    <br>
                 </div>
             </div>
             <div class='right-pane main'>
                 <div class='about'>  
                     <img src='images/about.png' />
-                    <p>Hi, I'm /<span class='ipa' title='IPA ftw'>na&#650;mi</span>/. I am a second-year M.S. student in the <span class='bold hyperlink' title='represent!' onclick='window.open("https://symsys.stanford.edu", "_blank"); window.open("https://www.businessinsider.com/stanford-symbolic-systems-major-alumni-2016-1", "_blank");'>Symbolic Systems Program</span> at Stanford University. Prior to coming to Stanford, I received my B.A. in Linguistics from the University of Washington, then spent a little time in the Seattle tech scene.</p>
-                    <p>My research interests lie at the intersection of natural and artificial linguistic intelligence. I am enthralled by projects that embody the convergence of these areas &mdash; e.g., NLP systems that shed light on formal linguistic theory, and vice versa.</p>
-                    <p>Lately, I have been collaborating with <span class='bold hyperlink' onclick='window.open("http://web.stanford.edu/~anttila/")'>Professor Arto Anttila</span> on a Python package that syllabifies Finnish and segments Finnish compounds. A state-of-the-art syllabifier, replete with compound detection, will allow us to probe Finnish phonology on an unprecedented scale. On the flip side, compound segmentation has utility in machine translation, semantic parsing, and spell-checking. This project also serves to address an array of questions: Does a serial or parallel analysis make better predictions in Finnish syllabification? And, on the NLP-end, how can Optimality Theory or Harmonic Grammar be leveraged in compound segmentation tasks? </p>
-                    <p>Within formal linguistics, I am drawn to theory-internal questions of phonology and syntax. When looking at an analysis of a language-specific phenomenon, I am most curious about its theoretical assumptions and how the analysis bears on the frameworks at play in the field.
+                    <p>Hi, I'm /<span class='ipa-1' title='IPA ftw'>n<span class='ipa-2'>a</span>&#650;mi</span>/. I am a second-year M.S. student in the <a class='bold' href='https://symsys.stanford.edu' target='_blank' onclick='window.open("https://www.businessinsider.com/stanford-symbolic-systems-major-alumni-2016-1", "_blank");'>Symbolic Systems Program</a> at Stanford University. Prior to coming to Stanford, I received my B.A. in Linguistics from the University of Washington, then spent a little time in the Seattle tech scene.</p>
+                    <p>My research interests lie at the intersection of natural and artificial linguistic intelligence. I am enthralled by projects that embody the convergence of these areas &mdash; e.g., NLP systems that shed light on formal linguistic theory, and vice versa. For instance, I have been collaborating with <a class='bold' href='http://web.stanford.edu/~anttila/' target='_blank'>Professor Arto Anttila</a> on a Python package that syllabifies Finnish and segments Finnish compounds. A state-of-the-art syllabifier, replete with compound detection, will allow us to probe Finnish phonology on an unprecedented scale. On the flip side, compound segmentation has utility in machine translation, semantic parsing, and spell-checking.</p>
+                    <p>Within formal linguistics, I am drawn to theory-internal questions of phonology and syntax. When looking at an analysis of a language-specific phenomenon, I am most curious about its theoretical assumptions and how the analysis bears on the frameworks at play in the field.</p>
                     <p><span class='bold'>Email</span>:&nbsp;&nbsp;<span class='email'></span></p>
                 </div>
                 <div class='cv'>
@@ -131,13 +135,12 @@
                     <br>
                     <div><span class='bold'>University of Washington</span>, Seattle, WA</div>
                     <div>BA in Linguistics and Communication with Honors, December 2011</div>
-                    <!-- <div>Thesis: <i>Language in cognitive economy</i></div> -->
                     <div class='br'></div>
                     <!-- work -->
                     <div class='section'>work</div>
                     <div><span class='bold'>Graduate Research Assistant</span>, January 2015 &ndash; September 2015; March 2016 &ndash; Present</div>
                     <div>Stanford University, Palo Alto, CA</div>
-                    <p>Conducting computational research on Finnish phonotactics. Built and maintaining a website for annotation and research. Creating a probabilistic compound splitter and a rule-based syllabifier that syllabifies Finnish with a 99% accuracy. Generating a phonologically-detailed, 1-million word data frame on the Finnish language. Tools: Python, Flask, JavaScript, RegEx, HTML/CSS, Bootstrap, PostgreSQL.</p>
+                    <p>Conducting computational research on Finnish phonotactics. Built and maintaining a website for annotation and research. Engineering a probabilistic compound splitter and a rule-based syllabifier that syllabifies Finnish with a 99% accuracy. Generating a phonologically-detailed, 1-million word data frame on the Finnish language. Tools: Python, Flask, JavaScript, RegEx, HTML/CSS, Bootstrap, PostgreSQL.</p>
                     <br>
                     <div><span class='bold'>&lsquo;Minds and Machines&rsquo; Teaching Assistant</span>, September 2015 &ndash; December 2015</div> 
                     <div>Stanford University, Palo Alto, CA</div>
@@ -145,7 +148,7 @@
                     <br>
                     <div><span class='bold'>Lead Backend Engineer</span>, June 2014 &ndash; December 2014</div>
                     <div>Venyooz, Inc., Santa Monica, CA</div>
-                    <p>Single-handedly built the backend for SchoolSpace, a web-based software for public school districts to power facility rentals. Implemented online application processing, calendaring, and payments. Designed customizable workflows, whereby each facility can have a unique approval process. <!-- Launched SchoolSpace in beta with a single district (29 schools), enticing 11 new districts (1,400 schools) to sign up the following year. --> Tools: Python, Django, HTML/CSS, Bootstrap, PostgresSQL.</p>
+                    <p>Single-handedly built the backend for SchoolSpace, a web-based software for public school districts to power facility rentals. Implemented online application processing, calendaring, and payments. Designed customizable workflows, whereby each facility can have a unique approval process. Tools: Python, Django, HTML/CSS, Bootstrap, PostgresSQL.</p>
                     <br>
                     <div><span class='bold'>Python Bootcamp Teaching Assistant</span>, June 2014 &ndash; July 2014</div>
                     <div>Code Fellows, LLC, Seattle, WA</div>

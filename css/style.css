@@ -1,221 +1,153 @@
-/* ---- fonts ---- */
-    @font-face {
-        font-family: Apercu Mono;
-        src: url(./fonts/apercu-mono-webfont.ttf);
-    }
-
-    @font-face {
-        font-family: Andika;
-        src: url(./fonts/andika-new-basic-r.ttf);
-    }
-
-    @font-face {
-        font-family: IPA Font;
-        src: url(./fonts/ipa-font.ttf);
-    }
-
-    @font-face {
-        font-family: 'Helvetica Neue Thin';
-        src: url(./fonts/helvetica-neue-thin.ttf);
-    }
-
-    @font-face {
-        font-family: 'Helvetica Neue';
-        src: url(./fonts/helvetica-neue.ttf);
-    }
-
-    @font-face {
-        font-family: 'Helvetica Neue Ultra Light';
-        src: url(./fonts/helvetica-neue-ultralight.ttf);
-    }
-
-    body {
-        font-family: 'Helvetica Neue Thin';
-    }
-
-/* ---- everywhere ---- */
-    html {
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        -webkit-text-size-adjust: 100%
-    }
-
-    body {
-        /*margin: auto;*/
-    }
-
-    .container {
-        color: #333333;
-        margin: 10% auto;
-        line-height: 1.428571429;
-    }
-
-    .toc {
-        font-size: 16px;
-        cursor: default;
-        z-index: 10;
-    }
-
-    .main {
-        margin-bottom: 140px;
-    }
-
-    .ipa {
-        font-family: Andika;
-        font-family: Aboriginal;
-        font-family: IPA Font;
-    }
-
-    .name,
-    .link,
-    .hyperlink,
-    .mobile-toggle,
-    .name-header {
-        cursor: url(./cursors/aerowedge.cur), pointer;
-    }
-
-    .name,
-    .name-header {
-        font-family: Apercu Mono;
-    }
-
-    .name {
-        font-size: 40px;
-        margin-bottom: 40px;
-    }
-
-    .slash {
-        font-size: 17px;
-        font-family: 'Helvetica Neue Ultra Light';
-        margin: 0 8px;
-    }
-
-    .link:hover,
-    .hyperlink:hover {
-        color: #c7c7c7;
-        color: #92A8D1; /* serenity */
-    }
-
-    .br {
-        height: 38px;
-    }
-
-    .small-br {
-        height: 8px;
-    }
-
-    .main > div {
-        position: relative;
-        top: 0;
-        display: none;
-    }
-
-/* ---- about ---- */
-    .about img {
-        height: 144px;
-        padding: 0;
-        margin: 8px 20px 10px 0;
-        border: 1px solid #333333;
-        float: left;
-    }
-
-/* ---- cv / resume ---- */
-    .main > div {
-        font-size: 14px;
-        /*width: 84%;*/
-        /*margin: 9px 20px;*/
-    }
-
-    .main div p {
-        margin: 0;
-        padding: 8px 0;
-    }
-
-    .section {
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        margin-bottom: 4px;
-    }
-
-    .bold {
-        font-family: 'Helvetica Neue';
-    }
-
-
-/* ---- fullscreen ---- */
-@media (min-width: 721px) {
-    body {
-        /*min-width: 1440px;*/
-        /*width: 1024px;*/
-        /*width: 1440px;*/
-        min-width: 1000px;
-    }
-
-    .container {
-        /*width: 90%;*/
-        /*width: 1000px;*/
-        /*max-width: 1152px;*/
-        width: 80%;
-        max-width: 1140px;
-        min-width: 1000px;
-
-    }
-
-    .name-header,
-    .mobile-toggle {
-        display: none;
-    }
-
-    .left-pane,
-    .right-pane {
-        display: inline-block;
-    }
-
-    .left-pane {
-        float: left;
-        /*margin-left: -20px;*/
-        /*left: 0;*/
-        /*width: 397px;*/
-        position: relative;
-        margin-left: 0px;
-    }
-
-    .right-pane {
-        float: left;
-        width: calc(100% - 444px);
-        /*min-width: 250px;*/
-        margin-left: 75px;
-        /*margin-right: 58px;*/
-        /*margin-left: 253px;*/
-        /*width: 690px;*/
-    }
-
-    .toc {
-        /*position: fixed;*/
-        text-align: right;
-    }
-
-    .main > div {
-        top: 0;
-    }
-
-    .visible-sm {
-        display: none;
-    }
+@font-face {
+    font-family: Apercu Mono;
+    src: url(./fonts/apercu-mono-webfont.ttf);
 }
 
+@font-face {
+    font-family: Andika;
+    src: url(./fonts/andika-new-basic-r.ttf);
+}
 
-/* ---- halfscreen ---- */
-@media (min-width: 421px) and (max-width: 720px) {
-    body {
-        width: 720px;
-    }
+@font-face {
+    font-family: IPA Font;
+    src: url(./fonts/ipa-font.ttf);
+}
 
-    .container {
-        width: 676px;
-        margin: 10% auto;
-    }
+@font-face {
+    font-family: 'Helvetica Neue Thin';
+    src: url(./fonts/helvetica-neue-thin.ttf);
+}
 
-    .name-header,
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url(./fonts/helvetica-neue.ttf);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Ultra Light';
+    src: url(./fonts/helvetica-neue-ultralight.ttf);
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: 'Helvetica Neue Thin';
+}
+
+a,
+a:active {
+    color: #333333;
+    text-decoration: none;
+}
+
+.name,
+.mobile-header {
+    font-family: Apercu Mono;
+}
+
+.bold {
+    font-family: 'Helvetica Neue';
+}
+
+.container {
+    color: #333333;
+    line-height: 1.428571429;
+    margin: 10% auto;
+}
+
+.toc {
+    font-size: 16px;
+    z-index: 10;
+    cursor: default;
+}
+
+.main {
+    margin-bottom: 140px;
+}
+
+.ipa-1 {
+    font-size: 15px;
+    font-family: Andika;
+}
+
+.ipa-2 {
+    font-family: IPA Font;
+}
+
+a,
+.name,
+.link,
+.hyperlink,
+.mobile-toggle,
+.mobile-header {
+    cursor: url(./cursors/aerowedge.cur), pointer;
+}
+
+.name {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.slash {
+    font-size: 17px;
+    font-family: 'Helvetica Neue Ultra Light';
+    margin: 0 8px;
+}
+
+.about img {
+    float: left;
+    height: 144px;
+    margin: 8px 20px 10px 0;
+    padding: 0;
+    border: 1px solid #333333;
+}
+
+.main > div {
+    font-size: 14px;
+    display: none;
+    position: relative;
+    top: 0;
+}
+
+.main div p {
+    margin: 0;
+    padding: 8px 0;
+}
+
+.section {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 4px;
+}
+
+a:hover,
+.link:hover {
+    color: #b565a7; /* radiant orchid */
+    color: #ad655f; /* marsala */
+    color: #f7cAc9; /* rose quartz */
+    color: #98ddde; /* limpet shell */
+    color: #92a8d1; /* serenity */
+}
+
+.highlight,
+.highlight:hover {
+    color: #333333;
+    border-bottom: 1px solid #333333;
+}
+
+.br {
+    height: 38px;
+}
+
+.small-br {
+    height: 8px;
+}
+
+@media (min-width: 630px) { /* not tiny */
+    .mobile-header,
     .mobile-toggle,
     .visible-sm {
         display: none;
@@ -227,18 +159,49 @@
     }
 
     .left-pane {
-        left: 0;
-        width: 180px;
-    }
-
-    .right-pane {
-        width: 470px;
-        margin-left: 180px;
+        width: auto; /* 156-223 */
     }
 
     .toc {
         text-align: right;
         position: fixed;
+    }
+}
+
+@media (min-width: 920px) { /* full screen */
+    .container {
+        max-width: 907px; /* 624 + 223 + 60 */
+    } 
+
+    .right-pane {
+        width: 624px;
+        margin-left: 223px;
+        padding-left: 60px;
+    }
+
+    .main > div {
+        top: 0;
+    }
+}
+
+@media (min-width: 630px) and (max-width: 1100px) { /* half < < full */
+    .container {
+        max-width: 877px; /* 624 + 223 + 30 */
+    } 
+
+    .right-pane {
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 630px) and (max-width: 919px) { /* half screen */
+    .container { 
+        max-width: 625px; /* 439 + 156 + 30 */
+    }
+
+    .right-pane {
+        width: 439px;
+        margin-left: 156px;
     }
 
     .name {
@@ -249,15 +212,9 @@
     .links {
         font-size: 14.5px;
     }
-
-    .cv,
-    .resume {
-        margin-top: 10px;
-    }
 }
 
-/* ---- tinyscreen ---- */
-@media (max-width: 420px) {
+@media (max-width: 629px) { /* tiny screen */
     body {
         width: 100%;
     }
@@ -276,9 +233,9 @@
         margin: 60px 0 80px;
     }
 
-     .right-pane > div  {
-        margin: 10px auto 0;
+    .right-pane > div  {
         width: 94%;
+        margin: 10px auto 0;
     }
 
     .name,
@@ -286,40 +243,35 @@
         display: none;
     }
 
-    .mobile-toggle,
-    .visible-sm {
-        display: block;
-    }
-
-    .name-header {
-        text-align: left;
+    .mobile-header {
         font-size: 22px;
-        padding-left: 14px;
-        padding-top: 11px;
+        text-align: left;
         display: block;
         word-spacing: 0px;
+        padding-top: 11px;
+        padding-left: 14px;
     }
 
     .toc {
         position: fixed;
-        max-height: 12px;
-        z-index: 999;
-        width: 100%;
         overflow: hidden;
-        -webkit-transition: all 0.3s;
         transition: all 0.3s;
-        padding-bottom: 40px;
-        background-color: rgba(255, 255, 255, 0.95);
         top: 0px;
+        width: 100%;
+        max-height: 12px;
+        padding-bottom: 40px;
         border-bottom: 1px solid #c7c7c7;
+        background-color: rgba(255, 255, 255, 0.95);
+        z-index: 999;
+        -webkit-transition: all 0.3s;
     }
 
     .links {
-        padding-top: 20px;
-        float: right;
-        width: 100%;
         text-align: center;
         text-transform: lowercase;
+        width: 100%;
+        float: right;
+        padding-top: 20px;
     }
 
     .open-nav {
@@ -327,11 +279,11 @@
     }
 
     .mobile-toggle {
+        position: absolute;
+        top: 0;
+        right: 0;
         width: 50px;
         height: 52px;
-        position: absolute;
-        right: 0;
-        top: 0;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
@@ -343,11 +295,11 @@
     }
 
     .mobile-toggle span {
+        display: block;
         width: 18px;
         height: 2px;
         margin: 0 0 4px 18px;
         background: #333333;
-        display: block;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
@@ -359,8 +311,8 @@
     }
 
     .mobile-toggle span:nth-child(1) {
-        transform-origin: top left;
         margin-top: 20px;
+        transform-origin: top left;
     }
 
     .mobile-toggle span:nth-child(3) {
@@ -385,41 +337,3 @@
         transform: rotate(-45deg);
     }
 }
-
-/* ---- highlight ---- */
-    .radiant-orchid,
-    .radiant-orchid:hover {
-        color: #B565A7;  /* 2014 Pantone color of the year */
-    }
-
-    .marsala,
-    .marsala:hover {
-        color: #AD655F;  /* 2015 Pantone color of the year */
-    }
-
-    .rose-quartz,
-    .rose-quartz:hover {
-        color: #F7CAC9;  /* 2016 Pantone color of the year */
-    }
-
-    .serenity,
-    .serenity:hover {
-        color: #92A8D1;  /* 2016 Pantone color of the year */
-    }
-
-    .limpet-shell,
-    .limpet-shell:hover {
-        color: #98DDDE;
-    }
-
-    .pantone-305c,
-    .pantone-305c:hover {
-        color: #66ccff
-    }
-
-    .highlight,
-    .highlight:hover {
-        color: #333333;
-        border-bottom: 1px solid #333333;
-        border-bottom: 0.5px solid #92A8D1;
-    }
