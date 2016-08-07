@@ -56,7 +56,7 @@
         $('.main > .about').fadeIn(TRANSITION_SPEED);
 
         // unmask email address
-        var xyz = ['tsnaomi', 'stanford', 'edu', '.', '@'];
+        var xyz = ['hello', 'tsnaomi', 'net', '.', '@'];
         var abc = xyz[0] + xyz[4] + xyz[1] + xyz[3] + xyz[2];
 
         // scramble and unscramble!
