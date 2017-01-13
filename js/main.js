@@ -1,42 +1,55 @@
 (function() {
-    var TRANSITION_SPEED = 100;
+    var TRANSITION_SPEED = 300;
 
     $(document).ready(updateMobileHeader);
     $(window).resize(updateMobileHeader);
 
-    // populate the main div on page load
-    renderAbout();
+    // populate the main div
+    populateMain();
 
     // set up the various listeners
     goToLink('cv');
     goToLink('resume');
     goToLink('about');
-    goToAbout();
+    detectHashChange();
     toggleNavigation();
 
-    function goToLink(page) {
-        var $link = $('.link.' + page);
+    function populateMain() {
+        // populate the main div depending on the hash
+        var page = window.location.hash.slice(1);
+        transitionPage(page);
 
-        $link.on('click', function(event) {
-            event.preventDefault();
-            transitionPage($link);
-            $('.main > .' + page).fadeIn(TRANSITION_SPEED);
-        });
-
-        if (page === 'about') {
-            renderAbout();
+        if (!page) {
+            renderDeets();
         }
     }
 
-    function goToAbout() {
-        $('.name, .mobile-header').on('click', function(event) {
+    function goToLink(page) {
+        var $link = $('.link.' + page);
+        
+        if (page === 'about') {
+            $link = $link.add('.name, .mobile-header');
+        }
+
+        // create a listener for the navigation link
+        $link.on('click', function(event) {
             event.preventDefault();
-            transitionPage();
-            renderAbout();
+            transitionPage(page);
+
+            // set the location hash
+            if (page === 'about') {
+                window.location.hash = '#';
+                renderDeets();
+            } else {
+                window.location.hash = page;
+            }
         });
     }
 
-    function transitionPage($link) {
+    function transitionPage(page) {
+        page = page || 'about';
+        var $link = $('.link.' + page);
+
         // remove existing highlights
         $('.link').removeClass('highlight');
 
@@ -48,13 +61,14 @@
         // hide everything in the right pane
         $('.main > div').css('display', 'none');
 
+        // populate the right pane
+        $('.main > .' + page).fadeIn(TRANSITION_SPEED);
+
         // scroll to the top of the page
         window.scrollTo(0, 0);
     }
 
-    function renderAbout() {
-        $('.main > .about').fadeIn(TRANSITION_SPEED);
-
+    function renderDeets() {
         // unmask
         var xyz = ['hello', 'tsnaomi', 'net', '.', '@'];
         var abc = xyz[0] + xyz[4] + xyz[1] + xyz[3] + xyz[2];
@@ -66,7 +80,15 @@
         });
     }
 
+    function detectHashChange() {
+        // detect hash changes (e.g., with Back and Forward)
+        $(window).on('hashchange', function() {
+            populateMain();
+        });
+    }
+
     function toggleNavigation() {
+        // toggle the navigation...
         $('.mobile-toggle, .link').on('click', function(event) {
             event.preventDefault();
             $('.toc').toggleClass('open-nav');
@@ -77,6 +99,7 @@
         var screenWidth = $(window).innerWidth();
         var $mobileHeader = $('.mobile-header');
 
+        // set name in mobile header based on screen width
         if (screenWidth < 350) {
             $mobileHeader.text('Naomi T. Shapiro');
         } else {
