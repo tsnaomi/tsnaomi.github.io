@@ -70,8 +70,8 @@
 
     function renderDeets() {
         // unmask
-        var xyz = ['hello', 'tsnaomi', 'net', '.', '@'];
-        var abc = xyz[0] + xyz[4] + xyz[1] + xyz[3] + xyz[2];
+        var xyz = ['tsn', 'uw', 'a', 'edu', '.', '@', 'omi'];
+        var abc = xyz[0] + xyz[2] + xyz[6] + xyz[5] + xyz[1] + xyz[4] + xyz[3];
 
         // scramble and unscramble!
         $('.something').shuffleLetters({
