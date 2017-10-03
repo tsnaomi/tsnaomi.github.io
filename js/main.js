@@ -74,7 +74,7 @@
         var abc = xyz[0] + xyz[4] + xyz[1] + xyz[3] + xyz[2];
 
         // scramble and unscramble!
-        $('.email').shuffleLetters({
+        $('.something').shuffleLetters({
             text: abc,
             fps: 30,
         });
