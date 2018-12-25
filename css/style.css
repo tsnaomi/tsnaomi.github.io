@@ -3,30 +3,45 @@
   src: url(./fonts/apercu-mono-webfont.ttf);
 }
 
-@font-face {
+/*@font-face {
   font-family: Andika;
   src: url(./fonts/andika-new-basic-r.ttf);
-}
+}*/
 
-@font-face {
+/*@font-face {
   font-family: IPA Font;
   src: url(./fonts/ipa-font.ttf);
-}
+}*/
 
 @font-face {
-  font-family: 'Helvetica Neue Thin';
-  src: url(./fonts/helvetica-neue-thin.ttf);
+  font-family: 'Helvetica Neue Bold';
+  src: url(./fonts/helvetica-neue-bold.ttf);
 }
+
+/*@font-face {
+  font-family: 'Helvetica Neue Medium';
+  src: url(./fonts/helvetica-neue-medium.ttf);
+}*/
 
 @font-face {
   font-family: 'Helvetica Neue';
   src: url(./fonts/helvetica-neue.ttf);
 }
 
-@font-face {
+/*@font-face {
+  font-family: 'Helvetica Neue Light';
+  src: url(./fonts/helvetica-neue-light.ttf);
+}*/
+
+/*@font-face {
+  font-family: 'Helvetica Neue Thin';
+  src: url(./fonts/helvetica-neue-thin.ttf);
+}*/
+
+/*@font-face {
   font-family: 'Helvetica Neue Ultra Light';
   src: url(./fonts/helvetica-neue-ultralight.ttf);
-}
+}*/
 
 html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -35,7 +50,7 @@ html {
 
 body {
   font-size: 14.5px;
-  font-family: 'Helvetica Neue Thin';
+  font-family: 'Helvetica Neue';
 }
 
 a,
@@ -44,18 +59,23 @@ a:active {
   text-decoration: none;
 }
 
+.name {
+  line-height: 1.4;
+}
+
 .name,
 .mobile-header {
   font-family: Apercu Mono;
 }
 
 .bold {
-  font-family: 'Helvetica Neue';
+  font-family: 'Helvetica Neue Bold';
 }
 
 .container {
   color: #333333;
-  line-height: 1.428571429;
+  /*line-height: 1.428571429;*/
+  line-height: 1.55;
   margin: 10% auto;
 }
 
@@ -69,14 +89,14 @@ a:active {
   margin-bottom: 140px;
 }
 
-.ipa-1 {
+/*.ipa-1 {
   font-size: 15px;
   font-family: Andika;
 }
 
 .ipa-2 {
   font-family: IPA Font;
-}
+}*/
 
 a,
 .name,
@@ -96,11 +116,11 @@ a,
   margin-bottom: 40px;
 }
 
-.slash {
+/*.slash {
   font-size: 17px;
-  font-family: 'Helvetica Neue Ultra Light';
+  font-family: 'Helvetica Neue Thin';
   margin: 0 8px;
-}
+}*/
 
 .about img {
   float: left;
@@ -111,7 +131,7 @@ a,
 }
 
 .main > div {
-  font-size: 14px;
+  font-size: 14.5px;
   display: none;
   position: relative;
   top: 0;
@@ -119,7 +139,7 @@ a,
 
 .main div p {
   margin: 0;
-  padding: 8px 0;
+  padding: 10px 0;
 }
 
 .section {
@@ -129,11 +149,11 @@ a,
 }
 
 a:hover,
+.name:hover,
 .link:hover {
   color: #b565a7; /* radiant orchid */
   color: #ad655f; /* marsala */
   color: #f7cAc9; /* rose quartz */
-  color: #98ddde; /* limpet shell */
   color: #92a8d1; /* serenity */
 }
 
@@ -143,8 +163,13 @@ a:hover,
   border-bottom: 1px solid #333333;
 }
 
+br {
+  padding-top: 2px;
+}
+
+
 .br {
-  height: 38px;
+  height: 40px;
 }
 
 .small-br {
@@ -245,7 +270,7 @@ a:hover,
 
   .right-pane > div  {
     width: 94%;
-    margin: 10px auto 0;
+    margin: 10px 18px 0 auto;
   }
 
   .name,

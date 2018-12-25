@@ -9,7 +9,6 @@
 
   // set up the various listeners
   goToLink('cv');
-  goToLink('resume');
   goToLink('about');
   detectHashChange();
   toggleNavigation();
@@ -70,8 +69,8 @@
 
   function renderDeets() {
     // unmask
-    var xyz = ['tsn', 'uw', 'a', 'edu', '.', '@', 'omi'];
-    var abc = xyz[0] + xyz[2] + xyz[6] + xyz[5] + xyz[1] + xyz[4] + xyz[3];
+    var xyz = ['ts', 'w', 'a', 'ed', '.', '@', 'omi', 'u', 'n'];
+    var abc = xyz[0] + xyz[8] + xyz[2] + xyz[6] + xyz[5] + xyz[7] + xyz[1] + xyz[4] + xyz[3] + xyz[7];
 
     // scramble and unscramble!
     $('.something').shuffleLetters({
