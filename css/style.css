@@ -176,6 +176,10 @@ br {
   height: 8px;
 }
 
+.projects ul li {
+  padding-bottom: 23px;
+}
+
 .icon {
   padding-left: 4px;
   font-size: 12px;

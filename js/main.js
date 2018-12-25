@@ -9,6 +9,7 @@
 
   // set up the various listeners
   goToLink('cv');
+  goToLink('projects');
   goToLink('about');
   detectHashChange();
   toggleNavigation();
