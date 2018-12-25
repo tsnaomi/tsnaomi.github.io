@@ -124,7 +124,8 @@ a,
 
 .about img {
   float: left;
-  height: 144px;
+  /*height: 144px;*/
+  height: 140px;
   margin: 8px 20px 10px 0;
   padding: 0;
   border: 1px solid #333333;
