@@ -145,6 +145,10 @@ a,
   margin-bottom: 4px;
 }
 
+a.fa {
+  color: #0088f9;
+}
+
 a:hover,
 .name:hover,
 .link:hover {
