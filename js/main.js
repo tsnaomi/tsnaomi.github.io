@@ -1,109 +1,140 @@
 (function() {
-  var TRANSITION_SPEED = 300;
+
+  MOBILE_WIDTH = 629
+
+  // setup --------------------------------------------------------------------
 
   $(document).ready(updateMobileHeader);
   $(window).resize(updateMobileHeader);
 
-  // populate the main div
-  populateMain();
+  $(document).ready(abyss);
+  $(window).resize(abyss);
+
+  // populate info
+  populate()
 
   // set up the various listeners
-  goToLink('cv');
-  goToLink('projects');
-  goToLink('about');
-  detectHashChange();
-  toggleNavigation();
+  anchor()
+  navigate('about')
+  navigate('papers')
+  navigate('teaching')
+  navigate('cv')
+  toggleNavigation()
+  updateMobileHeader()
 
-  function populateMain() {
-    // populate the main div depending on the hash
-    var page = window.location.hash.slice(1);
-    transitionPage(page);
+  // functions ----------------------------------------------------------------
 
-    if (!page) {
-      renderDeets();
-    }
+  function populate() {
+    // populate author names (to avoid typos)
+      // Last, F. M.
+    $('.nts').html("<span class='bold'>Shapiro</span>, <span class='bold'>N</span>. <span class='bold'>T</span>");
+    $('.aa').html('Anttila, A.');
+    $('.dsh').html('Hippe, D. S.');
+    $('.nfr').html('Ferjan Rami&#769;rez, N.');
+    $('.sst').html('Steinert-Threlkeld, S.');
+      // First M. Last
+    $('.full.nts').html("<span class='bold'>Naomi Tachikawa Shapiro</span>");
+    $('.full.aa').html('Arto Anttila');
+    $('.full.dsh').html('Daniel S. Hippe');
+    $('.full.nfr').html('Naja Ferjan Rami&#769;rez');
+    $('.full.sst').html('Shane Steinert-Threlkeld');
+
+    // render contact info
+    decode();
   }
 
-  function goToLink(page) {
-    var $link = $('.link.' + page);
-    
-    if (page === 'about') {
-      $link = $link.add('.name, .mobile-header');
-    }
+  function decode() {
+    // unmask
+    var xyz = ['t', 'w', 'a', 'ed', '.', '@', 'omi', 'u', 'sn'];
+    var abc = xyz[0] + xyz[8] + xyz[2] + xyz[6] + xyz[5] + xyz[7] + xyz[1] + xyz[4] + xyz[3] + xyz[7];
 
-    // create a listener for the navigation link
-    $link.on('click', function(event) {
-      event.preventDefault();
-      transitionPage(page);
+    // scramble and unscramble!
+    $('.something').shuffleLetters( {text: abc, fps: 30} );
+  }
 
-      // set the location hash
-      if (page === 'about') {
-        window.location.hash = '#';
-        renderDeets();
-      } else {
-        window.location.hash = page;
+  function anchor() {
+    // adjust anchor tags on page loag
+    $(window).on('load', function() {
+      if (window.location.hash) { 
+        transition(window.location.hash);
       }
     });
   }
 
-  function transitionPage(page) {
-    page = page || 'about';
-    var $link = $('.link.' + page);
+  function navigate(sect) {
+    // enable navigation links
+    var $nav = $('.' + sect);
 
-    // remove existing highlights
-    $('.link').removeClass('highlight');
+    $nav.on('click', function() {
+      transition('#' + sect);             // scroll to div
+      if (sect == 'about') { decode() }   // render about deets
+    });
+  }
 
-    // highlight $link if it is not undefined
-    if ($link) {
-      $link.addClass('highlight');
+  function transition(sect) {
+    // scroll to section
+    var screenWidth = $(window).innerWidth();
+
+    if (screenWidth > MOBILE_WIDTH) {
+      var pad = $('.left-pane').position().top;
+    } else {
+      var pad = 60;
     }
 
-    // hide everything in the right pane
-    $('.main > div').css('display', 'none');
+    var div = $(sect).position().top
 
-    // populate the right pane
-    $('.main > .' + page).fadeIn(TRANSITION_SPEED);
+    if (sect != 'about') {
+      div -= 7
+    }
 
-    // scroll to the top of the page
-    window.scrollTo(0, 0);
+    $('html, body').animate( {scrollTop: div - pad}, 0, 'swing' );
   }
 
-  function renderDeets() {
-    // unmask
-    var xyz = ['ts', 'w', 'a', 'ed', '.', '@', 'omi', 'u', 'n'];
-    var abc = xyz[0] + xyz[8] + xyz[2] + xyz[6] + xyz[5] + xyz[7] + xyz[1] + xyz[4] + xyz[3] + xyz[7];
+  function abyss() {
+    // pad the abyss
+    var screenWidth = $(window).innerWidth();
+    var screenHeight = $(window).height();
+    var $abyss = $('.abyss');
+    var cv = $('#cv').height();
 
-    // scramble and unscramble!
-    $('.something').shuffleLetters({
-      text: abc,
-      fps: 30,
-    });
+    if (screenWidth > MOBILE_WIDTH) {
+      var pad = $('.left-pane').position().top;
+    } else {
+      var pad = $('.left-pane').height();
+    }
+
+    $abyss.css('height', screenHeight - (pad + cv) * 2);
   }
 
-  function detectHashChange() {
-    // detect hash changes (e.g., with Back and Forward)
-    $(window).on('hashchange', function() {
-      populateMain();
-    });
-  }
+  // mobile -------------------------------------------------------------------
 
   function toggleNavigation() {
-    // toggle the navigation...
-    $('.mobile-toggle, .link').on('click', function(event) {
+    // toggle the navigation
+    $('.mobile-toggle').on('click', function(event) {
       event.preventDefault();
       $('.toc').toggleClass('open-nav');
+    });
+
+    $('.nav').on('click', function(event) {
+      var screenWidth = $(window).innerWidth();
+
+      if (screenWidth <= MOBILE_WIDTH) {
+        event.preventDefault();
+        $('.toc').toggleClass('open-nav');
+      }
     });
   }
 
   function updateMobileHeader() {
-    var screenWidth = $(window).innerWidth();
-    var $mobileHeader = $('.mobile-header');
-
     // set name in mobile header based on screen width
-    if (screenWidth < 350) {
+    var $screenWidth = $(window).innerWidth();
+    var $mobileHeader = $('.mobile-header > span');
+
+    if ($screenWidth < 350) {
       $mobileHeader.text('Naomi T. Shapiro');
     } else {
       $mobileHeader.text('Naomi Tachikawa Shapiro');
     }
   }
+
 })();

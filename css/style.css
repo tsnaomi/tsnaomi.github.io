@@ -3,60 +3,66 @@
   src: url(./fonts/apercu-mono-webfont.ttf);
 }
 
-/*@font-face {
-  font-family: Andika;
-  src: url(./fonts/andika-new-basic-r.ttf);
-}*/
-
-/*@font-face {
-  font-family: IPA Font;
-  src: url(./fonts/ipa-font.ttf);
-}*/
-
 @font-face {
-  font-family: 'Helvetica Neue Bold';
-  src: url(./fonts/helvetica-neue-bold.ttf);
-}
-
-/*@font-face {
-  font-family: 'Helvetica Neue Medium';
-  src: url(./fonts/helvetica-neue-medium.ttf);
-}*/
-
-@font-face {
-  font-family: 'Helvetica Neue';
+  font-family: Helvetica Neue;
   src: url(./fonts/helvetica-neue.ttf);
 }
 
-/*@font-face {
-  font-family: 'Helvetica Neue Light';
-  src: url(./fonts/helvetica-neue-light.ttf);
-}*/
-
-/*@font-face {
-  font-family: 'Helvetica Neue Thin';
-  src: url(./fonts/helvetica-neue-thin.ttf);
-}*/
-
-/*@font-face {
-  font-family: 'Helvetica Neue Ultra Light';
-  src: url(./fonts/helvetica-neue-ultralight.ttf);
-}*/
+@font-face {
+  font-family: Helvetica Neue Medium;
+  src: url(./fonts/helvetica-neue-medium.ttf);
+}
 
 html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-size: 14.5px;
-  font-family: 'Helvetica Neue';
+  font-size: 15px;
+  font-family: Helvetica Neue;
+}
+
+h1 {
+  font-weight: normal;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+h2 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-size: inherit;
+  font-weight: normal;
 }
 
 a,
 a:active {
   color: #333333;
   text-decoration: none;
+}
+
+a,
+.name,
+.nav,
+.hyperlink,
+.mobile-toggle,
+.mobile-header > span {
+  cursor: url(./cursors/aerowedge.cur), pointer;
+}
+
+a:hover,
+a:hover span,
+.about:hover,
+.nav:hover {
+  color: #92a8d1;
+  /*color: #7882FF;*/
+  /*color: #036240;*/
+}
+
+br {
+  padding-top: 2px;
 }
 
 .name {
@@ -69,42 +75,24 @@ a:active {
 }
 
 .bold {
-  font-family: 'Helvetica Neue Bold';
+  font-family: 'Helvetica Neue Medium';
 }
 
 .container {
   color: #333333;
-  /*line-height: 1.428571429;*/
   line-height: 1.55;
   margin: 10% auto;
+  overflow: scroll;
 }
 
 .toc {
-  font-size: 16px;
   z-index: 10;
   cursor: default;
+  width: 224px;
 }
 
 .main {
   margin-bottom: 140px;
-}
-
-/*.ipa-1 {
-  font-size: 15px;
-  font-family: Andika;
-}
-
-.ipa-2 {
-  font-family: IPA Font;
-}*/
-
-a,
-.name,
-.link,
-.hyperlink,
-.mobile-toggle,
-.mobile-header {
-  cursor: url(./cursors/aerowedge.cur), pointer;
 }
 
 .name {
@@ -112,15 +100,8 @@ a,
   margin-bottom: 40px;
 }
 
-/*.slash {
-  font-size: 17px;
-  font-family: 'Helvetica Neue Thin';
-  margin: 0 8px;
-}*/
-
-.about img {
+#about img {
   float: left;
-  /*height: 144px;*/
   height: 140px;
   margin: 8px 20px 10px 0;
   padding: 0;
@@ -128,8 +109,6 @@ a,
 }
 
 .main > div {
-  font-size: 14.5px;
-  display: none;
   position: relative;
   top: 0;
 }
@@ -145,45 +124,22 @@ a,
   margin-bottom: 4px;
 }
 
-a.fa {
-  color: #0088f9;
-}
-
-a:hover,
-.name:hover,
-.link:hover {
-  color: #b565a7; /* radiant orchid */
-  color: #ad655f; /* marsala */
-  color: #f7cAc9; /* rose quartz */
-  color: #92a8d1; /* serenity */
-}
-
-.highlight,
-.highlight:hover {
-  color: #333333;
-  border-bottom: 1px solid #333333;
-}
-
-br {
-  padding-top: 2px;
-}
-
-
 .br {
-  height: 40px;
+  height: 80px;
 }
 
 .small-br {
   height: 8px;
 }
 
-.projects ul li {
-  padding-bottom: 23px;
-}
-
 .icon {
   padding-left: 4px;
   font-size: 12px;
+}
+
+.fa {
+  color: #0088f9;
+  /*color: #7882FF;*/
 }
 
 @media (min-width: 630px) { /* not tiny */
@@ -308,7 +264,7 @@ br {
 
   .links {
     text-align: center;
-    text-transform: lowercase;
+    /*text-transform: lowercase;*/
     width: 100%;
     float: right;
     padding-top: 20px;
