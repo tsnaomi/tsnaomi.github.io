@@ -10,8 +10,8 @@
   $(document).ready(abyss);
   $(window).resize(abyss);
 
-  // populate info
-  populate()
+  // render contact info
+  decode();
 
   // set up the various listeners
   anchor()
@@ -23,25 +23,6 @@
   updateMobileHeader()
 
   // functions ----------------------------------------------------------------
-
-  function populate() {
-    // populate author names (to avoid typos)
-      // Last, F. M.
-    $('.nts').html("<span class='bold'>Shapiro</span>, <span class='bold'>N</span>. <span class='bold'>T</span>");
-    $('.aa').html('Anttila, A.');
-    $('.dsh').html('Hippe, D. S.');
-    $('.nfr').html('Ferjan Rami&#769;rez, N.');
-    $('.sst').html('Steinert-Threlkeld, S.');
-      // First M. Last
-    $('.full.nts').html("<span class='bold'>Naomi Tachikawa Shapiro</span>");
-    $('.full.aa').html('Arto Anttila');
-    $('.full.dsh').html('Daniel S. Hippe');
-    $('.full.nfr').html('Naja Ferjan Rami&#769;rez');
-    $('.full.sst').html('Shane Steinert-Threlkeld');
-
-    // render contact info
-    decode();
-  }
 
   function decode() {
     // unmask
