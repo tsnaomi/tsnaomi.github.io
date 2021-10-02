@@ -1,0 +1,283 @@
+body {
+  color: #333;
+  margin-bottom: 200px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin: 1.75rem 0 1.2rem;
+  font-weight: 600;
+}
+
+a {
+  color: #613dc1;
+}
+
+a:hover {
+  color: #858ae3;
+}
+
+q {
+  quotes: none;
+  font-style: italic;
+}
+
+abbr {
+  text-decoration: none !important;
+}
+
+abbr:hover{
+  cursor: inherit;
+}
+
+#main {
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+  padding-top: 90px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.anchor {
+  margin: -40px 0 24px;
+  padding-top: 70px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.divide {
+  margin-top: 50px;
+  height: 12px !important;
+  background: linear-gradient(to right, #716fef 40%, #faa6ff);
+  opacity: 40%;
+}
+
+/* container & media queries ----------------- */
+
+.sub-container {
+  margin: auto;
+  position: relative;
+}
+
+/* extra large & extra extra large */
+@media (min-width: 1200px) {
+  .container {
+    width: 990px;
+  }
+
+  /*#navvy .container,*/
+  .sub-container {
+    width: 900px;
+  }
+}
+
+/* large */
+@media (min-width: 992px) and (max-width: 1199px) { 
+  .container {
+    width: 880px;
+  }
+
+  .sub-container {
+    width: 800px;
+  }
+}
+
+/* medium*/ 
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 770px;
+    width: 770px;
+  }
+
+  .sub-container {
+    width: 700px;
+  }
+}
+
+/* x-small & small */
+@media (max-width: 767px) { 
+  .container {
+    max-width: 700px;
+    width: 100%;
+  }
+
+  .sub-container {
+    max-width: 90%;
+  }
+
+  .nav-item {
+    text-align: center;
+  }
+}
+
+/* mobile toggler ---------------------------- */
+
+#mobile-toggle,
+#mobile-toggle:active,
+#mobile-toggle:focus {
+  border: none;
+  box-shadow: none;
+}
+
+#mobile-toggle {
+  right: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+#mobile-toggle span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  margin-bottom: 4px;
+  background: #333;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#mobile-toggle span:nth-child(1) {
+  margin-top: 4px;
+  transform-origin: top left;
+}
+
+#mobile-toggle span:nth-child(3) {
+  transform-origin: bottom left;
+}
+
+#mobile-toggle[aria-expanded='true'] span:nth-child(2) {
+  width: 0%;
+}
+
+#mobile-toggle[aria-expanded='true'] span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#mobile-toggle[aria-expanded='true'] span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* particulars ------------------------------- */
+
+#course-details dd {
+  margin-bottom: 1rem;
+}
+
+.something {
+  height: 1.5rem;
+}
+
+#description li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+#description ul ul li {
+  margin-bottom: 1rem !important;
+}
+
+#schedule table {
+  width: 100%;
+}
+
+#schedule td {
+  padding: .3rem;
+}
+
+#schedule td:nth-child(2) {
+  padding-right: 8px;
+}
+
+#autumn th.date-col {
+  width: 10%;
+}
+
+#autumn th.topic-col {
+  width: 60%;
+}
+
+#autumn th.location-col {
+  width: 10%;
+}
+
+#autumn th.tues-oh-col {
+  width: 20%;
+}
+
+/* colors ------------------------------------ */
+
+.navbar-brand {
+  color: #2f195f !important;
+}
+
+.nav-link:hover {
+  color: #4d299c !important;
+}
+
+.nav-link.active {
+  color: #2f195f !important;
+}
+
+.light {
+  color: #333;
+  opacity: 50%;
+}
+
+.attn {
+  color: #9900ff; /* google doc purple */
+}
+
+#autumn a {
+  color: #f17f29; /* princeton orange */
+}
+
+#autumn a:hover {
+  color: #f6ae2d; /* honey yellow */
+}
+
+#winter a {
+  color: #3185fc; /* azure */
+}
+
+#winter a:hover {
+  color: #87bfff; /* french sky blue */
+}
+
+#spring a {
+  color: #7AB262; /* google doc green */
+}
+
+#spring a:hover {
+  color: #8cd790; /* granny smith apple */
+}
+
+/* safekeeping...
+- ultramarine blue: #2667ff
+- uranian blue: #add7f6
+- tea green: #ccf5ac
+*/
