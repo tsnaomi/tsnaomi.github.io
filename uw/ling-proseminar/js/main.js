@@ -24,7 +24,7 @@
       if (subsections.includes(subsection)) {
         event.preventDefault();
 
-        var pad = 230;
+        var pad = 242;
         var screenWidth = $(window).innerWidth();
 
         if (screenWidth <= MOBILE_WIDTH) {

@@ -185,6 +185,10 @@ abbr:hover{
 
 /* particulars ------------------------------- */
 
+#course-details {
+  padding-top: 17px;
+}
+
 #course-details dd {
   margin-bottom: 1rem;
 }
