@@ -54,11 +54,21 @@ abbr:hover{
   text-decoration: underline;
 }
 
+.strike {
+  text-decoration: line-through;
+}
+
 .divide {
   margin-top: 50px;
   height: 12px !important;
   background: linear-gradient(to right, #716fef 40%, #faa6ff);
   opacity: 40%;
+}
+
+.alert {
+  background-color: #fcdcff;
+  border-color: #fcceff;
+  text-align: center;
 }
 
 /* container & media queries ----------------- */
