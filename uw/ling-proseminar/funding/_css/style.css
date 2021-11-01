@@ -1,0 +1,23 @@
+th, td {
+  padding: 0.5rem !important;
+}
+
+th {
+  vertical-align: middle !important;
+}
+
+td {
+  vertical-align: top !important;
+}
+
+table {
+  font-size: 14px;
+}
+
+.container {
+  width: 95%;
+}
+
+th.col-name {
+  width: 200px;
+}
