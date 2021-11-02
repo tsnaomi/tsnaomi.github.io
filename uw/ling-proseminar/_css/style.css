@@ -267,6 +267,7 @@ abbr:hover{
 }
 
 .attn {
+  font-weight: bold;
   color: #9900ff !important; /* google doc purple */
 }
 
