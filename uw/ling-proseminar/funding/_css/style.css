@@ -20,4 +20,43 @@ table {
 
 th.col-name {
   width: 200px;
+  min-width: 100px;
+}
+
+th.col-type,
+th.col-intl,
+th.col-stage {
+  width: 90px;
+}
+
+th.col-eligbility,
+th.col-support {
+  min-width: 130px;
+}
+
+th.col-description {
+  min-width: 200px;
+}
+
+.pagination-detail .dropdown-item,
+.page-link {
+  color: #613dc1;
+}
+
+.pagination-detail button.show,
+.pagination-detail button:hover,
+.pagination-detail button:active,
+.pagination-detail .dropdown-item:hover,
+.page-item .page-link:hover {
+  color: #fff;
+  border-color: #858ae3;
+  background-color: #858ae3;
+}
+
+.pagination-detail button,
+.pagination-detail .dropdown-item.active,
+.page-item.active .page-link {
+  color: #fff;
+  border-color: #613dc1;
+  background-color: #613dc1;
 }
