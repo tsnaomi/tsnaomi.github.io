@@ -17,6 +17,26 @@
   </head>
 
   <body>
+
+    <!-- icons -->
+    <svg xmlns='http://www.w3.org/2000/svg' style='display: none;'>
+      <symbol id='arrow-up-right' fill='currentColor' viewBox='0 0 16 16'>
+        <path fill-rule='evenodd' d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z'/>
+      </symbol>
+      <symbol id='arrow-up-right-square-fill' fill='currentColor' viewBox='0 0 16 16'>
+        <path d='M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z'/>
+      </symbol>
+      <!-- <symbol id='check-circle-fill' fill='currentColor' viewBox='0 0 16 16'>
+        <path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z'/>
+      </symbol> -->
+      <!-- <symbol id='info-fill' fill='currentColor' viewBox='0 0 16 16'>
+        <path d='M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z'/>
+      </symbol> -->
+      <!-- <symbol id='exclamation-triangle-fill' fill='currentColor' viewBox='0 0 16 16'>
+        <path d='M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/>
+      </symbol> -->
+    </svg>
+
     <!-- navbar -->
     <nav id='navvy' class='navbar navbar-expand-md navbar-light bg-light fixed-top'>
       <div class='container'>
@@ -38,6 +58,12 @@
             <li class='nav-item'>
               <a class='nav-link' aria-current='page' href='#resources'>Resources</a>
             </li>
+             <li class='nav-item'>
+              <a class='nav-link' aria-current='page' href='/uw/ling-proseminar/funding' target='_blank'>
+                Funding
+                <svg class='bi flex-shrink-0 me-2' width='1rem' height='1rem' role='img'><use xlink:href='#arrow-up-right'/></svg>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -46,24 +72,15 @@
     <!-- main -->
     <div id='main' class='container'>
 
-      <!-- alert icons -->
-      <!-- <svg xmlns='http://www.w3.org/2000/svg' style='display: none;'>
-        <symbol id='check-circle-fill" fill="currentColor' viewBox='0 0 16 16'>
-          <path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z'/>
-        </symbol>
-        <symbol id='info-fill' fill='currentColor' viewBox='0 0 16 16'>
-          <path d='M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z'/>
-        </symbol>
-        <symbol id='exclamation-triangle-fill' fill='currentColor' viewBox='0 0 16 16'>
-          <path d='M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/>
-        </symbol>
-      </svg> -->
-
-      <!-- zoom alert -->
+      <!-- class alert -->
       <!-- <div class='alert alert-info' role='alert'>
-        <svg class='bi flex-shrink-0 me-2' width='24' height='24' role='img' aria-label="Warning:"><use xlink:href='#exclamation-triangle-fill'/></svg>
+        <svg class='bi flex-shrink-0 me-2' width='24' height='24' role='img'><use xlink:href='#exclamation-triangle-fill'/></svg>
         <strong>This week's class (Oct 19) will meet on <a href='https://canvas.uw.edu/courses/1480438/external_tools/95443' target='_blank'>Zoom</a>!</strong>
       </div> -->
+      <div class='alert alert-info' role='alert'>
+        <svg class='bi flex-shrink-0 me-2' width='24' height='24' role='img'><use xlink:href='#arrow-up-right-square-fill'/></svg>
+        <strong>Check out our new <a href='/uw/ling-proseminar/funding' target='_blank'>599B funding page</a>!</strong>
+      </div>
 
       <!-- course details -->
       <div id='course-details' class='sub-container'>
@@ -212,7 +229,7 @@
                   [<a href='https://www.lib.washington.edu/commons/services/gfis' target='_blank'>GFIS</a>]
                   [<a href='https://guides.lib.uw.edu/research/gfis/' target='_blank'>GFIS Research Guide</a>]
                   [<a href='https://blogs.uw.edu/gfis/' target='_blank'>GFIS Blog</a>]
-                  [<a href='/uw/ling-proseminar/funding' target='_blank'>list of funding opportunities &ndash; <span class='attn'>NEW</span></a>]
+                  [<a href='/uw/ling-proseminar/funding' target='_blank'>599B funding page</a>]
                 </td>
                 <td>GUG 415L</td>
                 <td>
@@ -297,6 +314,7 @@
                   Panelists: Agatha Downey, Angie McMillan-Major, Emily Ahn, &#38; Tsudoi Wada
                   <br/>
                   [<a href='https://drive.google.com/file/d/1l3zhytbmQEhlT01fu452AsKvngQWe5Mj/view?usp=sharing' target='_blank'>slides</a>]
+                  [<a href='/uw/ling-proseminar/funding' target='_blank'>599B funding page</a>]
                 </td>
                 <td>SAV 264</td>
                 <td>
@@ -439,11 +457,12 @@
           <li>
             <b>Fellowships & awards</b>
             <ul>
-              <li><a href='https://www.lib.washington.edu/commons/services/gfis' target='_blank'>Graduate Funding Information Service (GFIS)</a></li>
-              <li><a href='https://guides.lib.uw.edu/research/gfis/' target='_blank'>GFIS Research Guide</a> + <a href='https://blogs.uw.edu/gfis/' target='_blank'>GFIS Blog</a></li>
-              <li><a href='https://www.youtube.com/watch?time_continue=3&v=54xldOqu7aA&feature=emb_logo' target='_blank'>Finding funding for graduate school</a> (Spring 2021 YouTube presentation by GFIS)</li>
-              <li><a href='https://grad.uw.edu/graduate-student-funding/funding-information-for-students/fellowships/list-of-fellowships/' target='_blank'>List of UW-administered fellowships</a></li>
-              <li><a href='/uw/ling-proseminar/funding' target='_blank'>An evolving list of funding opportunities, curated just for 599B</a> &ndash; <span class='attn'>NEW</span></li>
+              <li><span class='attn'>Check out our <a href='/uw/ling-proseminar/funding' target='_blank'>599B funding page</a>!</span>
+              <!-- <li><a href='https://www.lib.washington.edu/commons/services/gfis' target='_blank'>Graduate Funding Information Service (GFIS)</a></li> -->
+              <!-- <li><a href='https://guides.lib.uw.edu/research/gfis/' target='_blank'>GFIS Research Guide</a> + <a href='https://blogs.uw.edu/gfis/' target='_blank'>GFIS Blog</a></li> -->
+              <!-- <li><a href='https://www.youtube.com/watch?time_continue=3&v=54xldOqu7aA&feature=emb_logo' target='_blank'>Finding funding for graduate school</a> (Spring 2021 YouTube presentation by GFIS)</li> -->
+              <!-- <li><a href='https://grad.uw.edu/graduate-student-funding/funding-information-for-students/fellowships/list-of-fellowships/' target='_blank'>List of UW-administered fellowships</a></li> -->
+              <!-- <li><a href='/uw/ling-proseminar/funding' target='_blank'>An evolving list of funding opportunities, curated just for 599B</a> &ndash; <span class='attn'>NEW</span></li> -->
             </ul>
           </li>
           <li>

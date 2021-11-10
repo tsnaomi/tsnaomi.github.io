@@ -4,7 +4,8 @@ Safekeeping:
 - https://bootstrap-table.com/docs/getting-started/introduction/
 
 Todo:
-- scrollable div
+- em, i, strong, b
+- internships
 
 -->
 
@@ -12,7 +13,7 @@ Todo:
 <html lang='en'>
   
   <head>
-    <title>External funding opportunities</title>
+    <title>External funding</title>
 
     <!-- meta -->
     <meta charset='utf-8'>
@@ -28,69 +29,231 @@ Todo:
     <link rel='icon' type='image/png' href='../_images/uw-ling-fav2.png'/>
   </head>
 
+  <body>
+    <!-- icons -->
+    <svg xmlns='http://www.w3.org/2000/svg' style='display: none;'>
+      <symbol id='arrow-up-right' fill='currentColor' viewBox='0 0 16 16'>
+        <path fill-rule='evenodd' d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z'/>
+      </symbol>
+      <!-- <symbol id='arrow-up-right-square-fill' fill='currentColor' viewBox='0 0 16 16'>
+        <path d='M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z'/>
+      </symbol> -->
+      <!-- <symbol id='check-circle-fill' fill='currentColor' viewBox='0 0 16 16'>
+        <path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z'/>
+      </symbol> -->
+      <!-- <symbol id='info-fill' fill='currentColor' viewBox='0 0 16 16'>
+        <path d='M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z'/>
+      </symbol> -->
+      <!-- <symbol id='exclamation-triangle-fill' fill='currentColor' viewBox='0 0 16 16'>
+        <path d='M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/>
+      </symbol> -->
+    </svg>
+
+    <!-- navbar -->
+    <nav id='navvy' class='navbar navbar-expand-md navbar-light bg-light fixed-top'>
+      <div class='container'>
+        <a class='navbar-brand' href='#'><b>External funding <!-- info --></b></a>
+        <button id='mobile-toggle' class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+          <ul class='navbar-nav ms-auto'>
+            <li class='nav-item'>
+              <a class='nav-link' aria-current='page' href='#requirement'>The Requirement</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link' aria-current='page' href='#resources'>Resources</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link' aria-current='page' href='#opportunities'>Opportunities</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link' aria-current='page' href='/uw/ling-proseminar/' target='_blank'>
+                LING 599B
+                <svg class='bi flex-shrink-0 me-2' width='1rem' height='1rem' role='img'><use xlink:href='#arrow-up-right'/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <!-- main -->
-    <div id='main' class='container'>
+    <div id='main'>
+      <div class='container'>
 
-      <!-- alert icons -->
-      <svg xmlns='http://www.w3.org/2000/svg' style='display: none;'>
-        <symbol id='check-circle-fill" fill="currentColor' viewBox='0 0 16 16'>
-          <path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z'/>
-        </symbol>
-        <symbol id='info-fill' fill='currentColor' viewBox='0 0 16 16'>
-          <path d='M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z'/>
-        </symbol>
-        <symbol id='exclamation-triangle-fill' fill='currentColor' viewBox='0 0 16 16'>
-          <path d='M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/>
-        </symbol>
-      </svg>
+        <!-- external funding requirement -->
+        <div id='requirement' class='sub-container'>
+          <h1 class='anchor first-anchor'>UW Linguistics external funding requirement</h1>
 
-      <!-- construction alert -->
-      <div class='alert alert-info' role='alert'>
-        <svg class='bi flex-shrink-0 me-2' width='24' height='24' role='img' aria-label="info:"><use xlink:href='#info-fill'/></svg>
-        This page is <strong>under construction</strong>. Keeping checking back for updates :)
+          <p>Each year, you are required to apply for or otherwise procure funding  that doesn't come out of the department's general budget&mdash;that is, <strong>external</strong> funding. External funding includes scholarships, fellowships, and TA/RA/SA-ships in other departments and centers on campus. You satisfy the requirement just by applying! It's perfectly okay not to get it.</p>
+
+          <p><i>Ideally</i>, the funding opportunity will include both a <b>stipend</b> and <b>tuition waiver</b> for at least one quarter, but it's not necessary for it to provide both. If the appointment/award stipend is less than what you would normally make through an appointment in UW Linguistics, the department will make up the difference.</p>
+
+
+          <p>Please see the <a href='https://docs.google.com/document/d/1oX3p_5itV9D35qLa2I_FBSHw2nsr07J5prg3dr1y_PU/view' target='_blank'><b>FAQs</b></a> for more information.</p>
+        </div>
+
+        <!-- search resources -->
+        <div id='resources' class='sub-container'>
+          <h1 class='anchor'>Funding resources</h1>
+
+          <p>Sifting through funding resources can easily take you down a rabbit hole (much like doing a literature review). Use the following campus resources to ground your journey as you apply for external funding.
+
+          <!-- GFIS -->
+          <h2 class='subsection'>Graduate Funding Information Service (GFIS)</h2>
+
+          <p><em>Use GFIS to facilitate the SEARCH process.</em></p>
+
+          <p>The UW Libraries' <a href='https://www.lib.washington.edu/commons/services/gfis' target='_blank'>Graduate Funding Information Service (GFIS)</a> provides resources and one-on-one advising on searching for funding opportunities.<!--  (Please note that GFIS does not help with <em>applying</em> for funding.) --> Topics and skills they review include the various kinds of funding opportunies, where to start searching for funding, when to search, and how to formulate search terms.</p>
+
+          <ul>
+            <li><a href='https://guides.lib.uw.edu/research/gfis/' target='_blank'>GFIS Research Guide</a> &ndash; links to various databases of funding opportunities and includes tips for the search process</li>
+            <li><a href='https://blogs.uw.edu/gfis/' target='_blank'>GFIS Blog</a> &ndash; an excellent up-to-date snapshot of available opportunities!</li>
+            <li><a href='https://www.youtube.com/watch?time_continue=3&v=54xldOqu7aA&feature=emb_logo' target='_blank'>Finding funding for graduate school</a> &ndash; a YouTube presentation by GFIS</li>
+          </ul>
+
+          <p><b>Tip</b>: The GFIS Blog allows you to filter for and view <a href='https://blogs.uw.edu/gfis/category/support-provided/assistantship/' target='_blank'>ads for past UW RA/TA/SA-ships</a>. Many of these calls are issued on a regular basis and can inform what opportunities you apply for in the future.</p>
+
+          <!-- UW Office of Fellowships & Awards -->
+          <h2 class='subsection'>Office of Fellowships and Awards</h2>
+
+          <p><em>Use the office to facilitate the APPLICATION process.</em></p>
+
+          <p>The UW Graduate School's <a href='https://grad.uw.edu/graduate-student-funding/' target='_blank'>Office of Fellowships and Awards</a> counsels graduate students on applying for fellowships and also coordinates and administers regional and federal fellowship and scholarship programs that require the school's involvement. In addition to helping you navigate applying for funding, for any programs that are <i>not</i> administered by the Graduate School, they will also review your applications essays and provide feedback.</p>
+
+          <ul>
+            <li><a href='https://grad.uw.edu/graduate-student-funding/funding-information-for-students/fellowships/list-of-fellowships/' target='_blank'>List of Fellowships</a> &ndash; a list of popular funding opportunities, many of which are administered by the UW Graduate School</li>
+            <li><a href='' targer='_blank'>Fellowships timeline</a> &ndash; an application timeline created specifically for UW Linguistics by Robyn Davis</li>
+            <li><a href='https://grad.uw.edu/graduate-student-funding/fellowships-and-awards-events-and-important-dates/' target='_blank'>Events and deadlines</a> &ndash; the office's calendar of information sessions and fellowship deadlines</li>
+            <li><a href='https://grad.uw.edu/graduate-student-funding/contact-fellowships-awards/' target='_blank'>Contact info</a> &ndash; reach out to them for one-on-one advising!</li>
+          </ul>
+
+          <p><b>Tip</b>: Check out their information sessions for fellowship-specific guidance.</p>
+
+          <!-- OWRC -->
+          <h2 class='subsection'>Odegaard Writing and Research Center (OWRC)</h2>
+
+          <p><em>Use the OWRC to facilitate the WRITING process.</em></p>
+
+          <p>The <a href='https://depts.washington.edu/owrc/' target='_blank'>Odegaard Writing and Research Center (OWRC)</a> is an incredible resource for both undergraduate and graduate students. The OWRC provides resources, workshops, tutoring, and one-on-one appointments to help students at any stage of the research and writing process. Though they don't specialize in applying for funding, you can definitely use them to help you craft your application statements (as well as in your research endeavors).</p>
+
+          <p><b>Tip</b>: Review your application statement with an OWRC tutor! They can gauge how accessible your statement is to a non-LING audiance, which is an important aspect of applying for funding.</p>
+
+          <!-- UW departments, centers, and programs -->
+          <h2>UW departments, centers, and programs</h2>
+
+          <p><em>Additional ways of FINDING funding.</em></p>
+
+          <p>Many entities on campus list area-specific funding opportunities. They typically focus on smaller project grants (<$4,000) but also include some fully-funded fellowships. Though the project grants will not satisfy the external funding requirement if they are not nationally or internationally competitive, they may still provide a worthwhile means of funding your research!</p>
+
+          <p>Below are links to their respective funding pages:</p>
+
+          <ul>
+            <li><a href='https://jsis.washington.edu/africa/resources/funding/' target='_blank'>African Studies Program</a></li> <!-- included in JSIS website -->
+            <li><a href='https://jsis.washington.edu/canada/funding/' target='_blank'>Canadian Studies Center</a></li> <!-- included in JSIS website -->
+            <li><a href='https://jsis.washington.edu/global/funding/' target='_blank'>Center for Global Studies</a></li>
+            <li><a href='https://jsis.washington.edu/korea/funding/' target='_blank'>Center for Korean Studies</a></li>
+            <li><a href='https://admin.artsci.washington.edu/advising/scholarship-information' target='_blank'>College of Arts and Sciences</a></li>
+            <li><a href='https://scandinavian.washington.edu/scholarships' target='_blank'>Department of Scandinavian Studies</a></li>
+            <li><a href='https://jsis.washington.edu/ellisoncenter/for-current-students/funding/graduate-funding/' target='_blank'>Ellison Center for Russian, East European and Central Asian Studies</a></li>
+            <li><a href='https://frenchitalian.washington.edu/scholarships-fellowships-and-grants' target='_blank'>French and Italian Studies</a></li>
+            <li><a href='https://jsis.washington.edu/advise/funding/' target='_blank'>Jackson School of International Studies</a></li>
+            <li><a href='https://jsis.washington.edu/japan/for-students/scholarships-and-funding/' target='_blank'>Japan Studies Program</a></li>
+            <li><a href='https://jsis.washington.edu/latinam/opportunities/' target='_blank'>Latin America and Caribbean Studies</a></li>
+            <li><a href='https://nelc.washington.edu/nelc-fellowships' target='_blank'>Near Eastern Languages and Civilization</a></li>
+            <li><a href='https://simpsoncenter.org/support-funding/fall-2021-funding-round/funding-categories-0' target='_blank'>Simpson Center for the Humanities</a></li>
+            <li><a href='https://slavic.washington.edu/scholarships-and-financial-support' target='_blank'>Slavic Languages and Literature</a></li>
+            <li><a href='https://jsis.washington.edu/southasia/resources/funding/' target='_blank'>South Asia Center</a></li>
+            <li><a href='https://jewishstudies.washington.edu/scholarships-fellowships-funding-opportunities/' target='_blank'>Stroum Center for Jewish Studies</a></li>
+          </ul>
+        </div>
+
+        <!-- opportunities -->
+        <div id='opportunities' class='sub-container'>
+          <h1 class='anchor'>Funding opportunities</h1>
+
+          <p>Below are some scholarships and fellowships that trend towards being more relevant to PhD students in UW Linguistics. <b>This is a mini table of awards</b>. It is not an exhaustive list. If you have recommendations for additional awards to include in the table, please suggest them using the anonymous feedback Google Form (<a href='https://canvas.uw.edu/courses/1480438' target='_blank'>accessible via Canvas</a>). Thank you!</p>
+
+          <button class='offcanvas-button' type='button' data-bs-toggle='offcanvas' href='#awards-table-key' role='button' aria-controls='awards-table-key'>
+            Click here to view a KEY for the table columns.
+          </button>
+
+          <!-- off canvas -->
+          <div class='offcanvas offcanvas-end' tabindex='-1' id='awards-table-key' aria-labelledby='offcanvasExampleLabel'>
+            <div class='offcanvas-header'>
+              <h5 class='offcanvas-title' id='offcanvasExampleLabel'>Mini Awards Table: Column Key</h5>
+              <button type='button' class='btn-close text-reset' data-bs-dismiss='offcanvas' aria-label='Close'></button>
+            </div>
+            <div class='offcanvas-body'>
+              <dl class="row">
+
+                <!-- focus -->
+                <dt class="col-xs-1">Focus</dt>
+                <dd class="col-xs-11">
+                 The research focus of the award.
+                  <ul>
+                    <li><i>General</i> &ndash; All disciplines</li>
+                    <li><i>Comp sci</i> &ndash; Computer science related areas, <span class='attn'>including ML/NLP</span></li>
+                    <li>Other options include <i>humanities</i>, <i>social sciences</i>, <i>lang/area studies</i>, <i>STEM</i>, and <i>AI/ML</i></li>
+                  </ul>
+                </dd>
+
+                <!-- intl -->
+                <dt class="col-xs-1">Intl.</dt>
+                <dd class="col-xs-11">Whether the award is available to non-U.S. citizens/permanent residents.</dd>
+
+                <dt class="col-xs-1">PhD stage</dt>
+                <dd class="col-xs-11">
+                  When to apply for the award. Note that most awards require you to be a student throughout the duration of the award.
+                  <ul>
+                    <li><i>Any</i> &ndash; Apply at any point during your degree</li>
+                    <li><i>Early</i> &ndash; Apply towards the beginning of your degree</li>
+                    <li><i>Mid</i> &ndash; Apply towards the middle your degree</li>
+                    <li><i>Late</i> &ndash; Apply towards the end of your degree (e.g., dissertation grants)</li>
+                  </ul>
+                </dd>
+
+                <!-- eligibility -->
+                <dt class="col-xs-1">Eligibility</dt>
+                <dd class="col-xs-11">
+                  Eligibility requirements beyond those specified by <i>Focus</i> and <i>Intl</i>.
+                  <ul>
+                    <li><i>ABD</i> &ndash; "All but dissertation" (i.e., you have made candidacy)</li>
+                  </ul>
+                </dd>
+
+                <!-- support -->
+                <dt class="col-xs-1">Approx. support</dt>
+                <dd class="col-xs-11">The approximate financial support provided by the award, based on the most recent application cycle (as of Nov. 2021).</dd>
+
+                <!-- duration -->
+                <dt class="col-xs-1">Duration</dt>
+                <dd class="col-xs-11">The duration of the award.</dd>
+
+                <!-- deadline -->
+                <dt class="col-xs-1">Approx. deadline</dt>
+                <dd class="col-xs-11">The approximate deadline of the award application, based on the most recent application cycle (as of Nov. 2021).</dd>
+
+              </dl>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <br/>
-
-      <!-- appointments -->
-      <h1>Ideas for LING-external UW appointments</h1>
-
-      <ul>
-        <li>Check out <a href='https://blogs.uw.edu/gfis/category/support-provided/assistantship/'>this link</a> to view ads for past UW research/teaching/staff assistantships. Many of these calls are issued on a regular basis!</li>
-      </ul>
-      
-      <!-- <table data-toggle='table'> -->
-      <!-- </table> -->
-
-      <!-- TODO: Conference + travel grants -->
-
-      <br/>
-
-      <!-- fellowships -->
-      <h1>Fellowships, scholarships, and grants, <em>oh my!</em></h1>
-
-      <p><strong>Key</strong>:
-      <ul>
-        <li><i>PhD stage</i> &ndash; when to apply (earlier or later in your program)</li>
-        <li><i>ABD</i> &ndash; "all but dissertation" (i.e., you have made candidacy)</li>
-        <li><i>Intl.</i> &ndash; available to international students</li>
-        <!-- NOTE: deadlines, stages, intl-meaning -->
-      </ul>
-
-      <p><strong>Have suggestions for opportunities you'd like me to include?</strong> Please suggest them using the anonymous feedback Google Form (<a href='https://canvas.uw.edu/courses/1480438' target='_blank'>accessible via Canvas</a>). Thank you!</p>
-
-      <!-- <br/> -->
-
-      <table data-toggle='table' data-url='./_data/fellowships.json' data-sort-name='stage' data-sort-order='asc' data-search='true'> <!--  data-pagination='true' -->
+      <!-- mini table of awards -->
+      <table data-toggle='table' data-url='./_data/fellowships.json' data-sort-name='stage' data-sort-order='asc' data-search='true'> <!-- data-pagination='true' -->
         <thead>
           <tr>
             <th data-sortable='true' data-field='name' class='col-name' data-sorter='nameSorter'>Name</th>
             <th data-sortable='true' data-field='focus' class='col-focus'>Focus</th>
-            <th data-sortable='true' data-field='type' class='col-type'>Type</th>
+            <!-- <th data-sortable='true' data-field='type' class='col-type'>Type</th> -->
             <th data-sortable='true' data-field='intl' class='col-intl'>Intl.</th>
             <th data-sortable='true' data-field='stage' class='col-stage'>PhD<br/>stage</th>
             <th data-sortable='true' data-field='eligibility' class='col-eligibility'>Eligibility</th>
-            <th data-sortable='true' data-field='support' class='col-support'>Support</th>
+            <th data-sortable='true' data-field='support' class='col-support'>Approx.<br/> support</th>
             <th data-sortable='true' data-field='duration' class='col-duration'>Duration</th>
             <th data-sortable='true' data-field='deadline' class='col-deadline'>Approx.<br/>deadline</th>
             <th data-field='notes' class='col-description'>Description</th>
@@ -105,6 +268,7 @@ Todo:
     <script type='text/javascript' src='../_js/bootstrap.bundle.min.js'></script> <!-- Bootstrap 5 -->
     <script type='text/javascript' src='../../../_js/jquery-3.6.0.min.js'></script>
     <script type='text/javascript' src='https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.js'></script> <!-- Bootstrap Table 4 -->
+    <script type='text/javascript' src='../_js/main.js'></script>
     <script>
       function nameSorter(a, b) {
         var aa = $(a).text();
