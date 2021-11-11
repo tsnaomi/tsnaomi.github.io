@@ -14,6 +14,10 @@ td {
   vertical-align: top !important;
 }
 
+hr {
+  margin-bottom: 0px;
+}
+
 .anchor {
   padding-top: 90px;
 }
