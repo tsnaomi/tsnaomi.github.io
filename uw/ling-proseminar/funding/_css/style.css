@@ -34,6 +34,10 @@ hr {
   margin-right: auto;
 }
 
+.bootstrap-table thead tr {
+  border-bottom-width: 3px;
+}
+
 .col-name {
   width: 200px;
   min-width: 100px;

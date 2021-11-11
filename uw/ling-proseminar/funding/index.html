@@ -22,6 +22,7 @@ Todo:
     <!-- css -->
     <link rel='stylesheet' href='../_css/bootstrap.min.css'/> <!-- Bootstrap 5 -->
     <link rel='stylesheet' href='https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.css'/> <!-- Bootstrap Table 4 -->
+    <link rel='stylesheet' href='https://unpkg.com/bootstrap-table@1.19.0/dist/extensions/sticky-header/bootstrap-table-sticky-header.css'/>
     <link rel='stylesheet' href='../_css/style.css'/>
     <link rel='stylesheet' href='./_css/style.css'/>
 
@@ -247,7 +248,7 @@ Todo:
       </div>
 
       <!-- mini table of awards -->
-      <table data-toggle='table' data-url='./_data/fellowships.json' data-sort-name='stage' data-sort-order='asc' data-search='true'> <!-- data-pagination='true' -->
+      <table data-toggle='table' data-url='./_data/fellowships.json' data-sort-name='stage' data-sort-order='asc' data-search='true' data-sticky-header='true' data-sticky-header-offset-y='62'> <!-- data-pagination='true' -->
         <thead>
           <tr>
             <th data-sortable='true' data-field='name' class='col-name' data-sorter='nameSorter'>Name</th>
@@ -271,6 +272,7 @@ Todo:
     <script type='text/javascript' src='../_js/bootstrap.bundle.min.js'></script> <!-- Bootstrap 5 -->
     <script type='text/javascript' src='../../../_js/jquery-3.6.0.min.js'></script>
     <script type='text/javascript' src='https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.js'></script> <!-- Bootstrap Table 4 -->
+    <script type='text/javascript' src='https://unpkg.com/bootstrap-table@1.19.0/dist/extensions/sticky-header/bootstrap-table-sticky-header.min.js'></script>
     <script type='text/javascript' src='../_js/main.js'></script>
     <script>
       function nameSorter(a, b) {
