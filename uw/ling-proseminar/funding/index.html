@@ -105,7 +105,7 @@ Todo:
           <p>Sifting through funding resources can easily take you down a rabbit hole (much like doing a literature review). Use the following campus resources to ground your journey as you apply for external funding.
 
           <!-- GFIS -->
-          <h2 class='subsection'>Graduate Funding Information Service (GFIS)</h2>
+          <h2 id='gfis' class='subsection'>Graduate Funding Information Service (GFIS)</h2>
 
           <p><em>Use GFIS to facilitate the SEARCH process.</em></p>
 
@@ -120,7 +120,7 @@ Todo:
           <p><b>Tip</b>: The GFIS Blog allows you to filter for and view <a href='https://blogs.uw.edu/gfis/category/support-provided/assistantship/'>ads for past UW RA/TA/SA-ships</a>. Many of these calls are issued on a regular basis and can inform what opportunities you apply for in the future.</p>
 
           <!-- UW Office of Fellowships & Awards -->
-          <h2 class='subsection'>Office of Fellowships and Awards</h2>
+          <h2 id='office-of-fellowships-and-awards' class='subsection'>Office of Fellowships and Awards</h2>
 
           <p><em>Use the office to facilitate the APPLICATION process.</em></p>
 
@@ -136,7 +136,7 @@ Todo:
           <p><b>Tip</b>: Check out their information sessions for fellowship-specific guidance.</p>
 
           <!-- OWRC -->
-          <h2 class='subsection'>Odegaard Writing and Research Center (OWRC)</h2>
+          <h2 id='owrc' class='subsection'>Odegaard Writing and Research Center (OWRC)</h2>
 
           <p><em>Use the OWRC to facilitate the WRITING process.</em></p>
 
@@ -145,7 +145,7 @@ Todo:
           <p><b>Tip</b>: Review your application statement with an OWRC tutor! They can gauge how accessible your statement is to a non-LING audiance, which is an important aspect of applying for funding.</p>
 
           <!-- UW departments, centers, and programs -->
-          <h2>UW departments, centers, and programs</h2>
+          <h2 id='campus-resources' class='subsection'>UW departments, centers, and programs</h2>
 
           <p><em>Additional ways of FINDING funding.</em></p>
 
@@ -265,6 +265,9 @@ Todo:
         </thead>
       </table>
 
+      <!-- welp -->
+      <div class='welp'></div>
+
     </div>
   </body>
 
@@ -273,14 +276,7 @@ Todo:
     <script type='text/javascript' src='../../../_js/jquery-3.6.0.min.js'></script>
     <script type='text/javascript' src='https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.js'></script> <!-- Bootstrap Table 4 -->
     <script type='text/javascript' src='https://unpkg.com/bootstrap-table@1.19.0/dist/extensions/sticky-header/bootstrap-table-sticky-header.min.js'></script>
-    <script type='text/javascript' src='../_js/main.js'></script>
-    <script>
-      function nameSorter(a, b) {
-        var aa = $(a).text();
-        var bb = $(b).text();
-        return aa.localeCompare(bb)
-      }
-    </script>
+    <script type='text/javascript' src='./_js/main.js'></script>
   </footer>
 
 </html>
