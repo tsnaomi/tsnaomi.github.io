@@ -71,6 +71,10 @@ abbr:hover{
   text-align: center;
 }
 
+.normal-weight {
+  font-weight: normal !important;
+}
+
 /* container & media queries ----------------- */
 
 .sub-container {
