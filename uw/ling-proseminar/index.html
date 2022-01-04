@@ -1,4 +1,4 @@
-<!doctype html>
+
 <html lang='en'>
   
   <head>
@@ -11,6 +11,7 @@
     <!-- css -->
     <link rel='stylesheet' href='./_css/bootstrap.min.css'/> <!-- Bootstrap 5 -->
     <link rel='stylesheet' href='./_css/style.css'/>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'> <!-- Bootstrap icons -->
 
     <!-- favicon -->
     <link rel='icon' type='image/png' href='./_images/uw-ling-fav2.png'/>
@@ -51,9 +52,12 @@
             <li class='nav-item'>
               <a class='nav-link' aria-current='page' href='#description'>Description</a>
             </li>
-            <li class='nav-item'>
-              <a class='nav-link' aria-current='page' href='#autumn'>Schedule</a>
-              <!-- todo: dropdown -->
+            <li class='nav-item dropdown'>
+              <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Schedule</a>
+              <ul class='dropdown-menu' aria-labelledby='navbarDropdown'>
+                <li><a class='dropdown-item' href='#autumn'>Autumn</a></li>
+                <li><a class='dropdown-item' href='#winter'>Winter</a></li>
+              </ul>
             </li>
             <li class='nav-item'>
               <a class='nav-link' aria-current='page' href='#resources'>Resources</a>
@@ -83,12 +87,13 @@
 
         <div class='row'>
           <dt class='col-sm-2'>Time</dt>
-          <dd class='col-sm-10'>Tuesdays, 2:30–3:20 PM</dd>
+          <dd class='col-sm-10'>Tuesdays, 3:30–4:20 PM</dd>
           <dt class='col-sm-2'>Place</dt>
           <dd class='col-sm-10'>
-            <a href='https://www.washington.edu/maps/#!/gug'><abbr title='Guggenheim'>GUG</abbr> 415L</a>
+            <a href='https://www.washington.edu/maps/#!/ECE'><abbr title='Electrical and Computer Engineering Building'>ECE</abbr> 042</a>
             and
-            <a href='https://www.washington.edu/maps/#!/sav'><abbr title='Saverys'>SAV</abbr> 264</a>
+            <a href='https://canvas.uw.edu/courses/1517295/external_tools/95443'>Zoom</a>
+            <span class='winter'>(winter quarter)</span>
           </dd>
           <dt class='col-sm-2'>Instructor</dt>
           <dd class='col-sm-10'>
@@ -98,9 +103,9 @@
           </dd>
           <dt class='col-sm-2'>Office hours</dt>
           <dd class='col-sm-10'>
-            Tuesdays, 1:00–2:00 PM, at <a href='#autumn'>rotating locations</a>
+            Mondays, 3:30–4:30 PM, on <a href='https://canvas.uw.edu/courses/1517295/external_tools/95443'>Zoom</a>
             <br/>
-            Thursdays, 1:00–2:00 PM, on <a href='https://canvas.uw.edu/courses/1480438/external_tools/95443'>Zoom</a>
+            Tuesdays, 2:00–3:00 PM, at <a href='#winter'>rotating locations</a>
             <br/>
             And by appointment
           </dd>
@@ -116,7 +121,7 @@
         <p>Welcome to UW Linguistics! LING 599B is a new proseminar series, designed to help ground your PhD experience and connect you with fellow PhD students and faculty in the department. Over the next three quarters, we will focus on professional development, mental health, and ethical and inclusive research practices. While we will touch upon all of these themes throughout the year, each quarter will center on particular topics:</p>
 
         <ul>
-          <li>This <b>autumn</b>, we will tackle getting oriented within UW Linguistics and how to identify and apply for external funding opportunities.</li>
+          <li>In the <b>autumn</b>, we will tackle getting oriented within UW Linguistics and how to identify and apply for external funding opportunities.</li>
 
           <li>In the <b>winter</b>, we will explore mental health and inclusive research practices as we consider how we can mindfully approach research and strive towards equity in linguistics and beyond.</li>
 
@@ -125,32 +130,44 @@
 
         <p>The proseminar will feature many guest speakers and panel discussions throughout the year to help expose you to multiple perspectives and opportunities. We will also hold "workshop" days, where you will have the option to get feedback on relevant written pieces, such as application statements.</p>
 
-        <p><em>This autumn</em>, on the days when we have guest speakers and panel discussions, we will meet in the spacious <a href='https://www.washington.edu/maps/#!/sav'>Savery 264</a> (unless otherwise specified). On all other days, we will meet in <a href='https://www.washington.edu/maps/#!/gug'>Guggenheim 415L</a>, the Linguistics Conference Room.</p>
+        <!-- recordings -->
+        <h2 id='recordings' class='subsection'>Recordings</h2>
+
+        <p>To facilitate remote and/or asynchronous attendance, each meeting of the proseminar will be recorded and posted to our course-specific <a href='https://canvas.uw.edu/courses/1517295'>Canvas</a>.</p>
+
 
         <!-- assignments -->
         <h2 id='assignments' class='subsection'>Assignments</h2>
 
-        <p>The assignments for this proseminar will be lightweight. They will consist of short brainstorms, optional workshop pieces, the occasional reading, and other small activities. With the exception of the workshop pieces, please expect to spend around an hour each week on assignments. We will use <a href='https://canvas.uw.edu/courses/1480438'>Canvas</a> for all assignment submissions and online discussions.</p>
+        <p>The assignments for the proseminar will be lightweight. They will consist of small activities (e.g., show-and-tells, mini presentations), the occasional reading, optional workshop pieces, and one funding application statement. With the exception of the workshop pieces and applications statement, please expect to spend up to an hour each week on assignments. We will use <a href='https://canvas.uw.edu/courses/1517295'>Canvas</a> for all assignment submissions and online discussions.</p>
 
         <!-- grading -->
         <h2 id='grading' class='subsection'>Grading</h2>
 
-        <p>Since LING 599B is purely meant to be a <em>resource</em> for you, everyone will automatically receive full credit. With that said, you will get as much out of the proseminar as you put into it. In turn, I promise to always be engaged during our time together and to provide thorough feedback on deliverables, such as workshop pieces.</p>
+        <p>Since LING 599B is purely meant to be a resource for you, very few assignments will be graded for credit. With that said, you will get as much out of the proseminar as you put into it. In turn, I promise to always be engaged during our time together and to provide thorough feedback on deliverables, such as workshop pieces and application statements.</p>
+
+        <ul>
+          <li>In the <b>autumn</b>, everyone will automatically receive full credit!</li>
+
+          <li>In the <b>winter</b>, everyone who completes the assignment <i>Calendaring downtime</i> (due January 18) will receive full credit.</li>
+
+          <li>In the <b>spring</b>, full credit will be given for completing the assignments <i>Three funding opportunities</i> and <i>Funding application statement</i> at some point during the fall, winter, or spring.
+        </ul>
 
         <!-- feedback -->
         <h2 id='feedback' class='subsection'>Continuous feedback</h2>
 
-        <p>Is there a topic, skill, or reading you would like to see featured? What about the proseminar is working or not working for you? Please let me know! To improve our time together, I have created a Google Form (<a href='https://canvas.uw.edu/courses/1480438'>accessible via Canvas</a>) to collect anonymous feedback and requests. You may fill out this form as many times as you like. While you must sign in with your UW NetID to supply feedback, your responses are 100% anonymous.</p>
+        <p>Is there a topic, skill, or reading you would like to see featured? What about the proseminar is working or not working well for you? Please let me know! To improve our time together, I have created a Google Form (<a href='https://canvas.uw.edu/courses/1517295'>accessible via Canvas</a>) to collect anonymous feedback and requests. You may fill out this form as many times as you like. While you must sign in with your UW NetID to supply feedback, your responses are 100% anonymous.</p>
 
         <!-- office hours -->
         <h2 id='office-hours' class='subsection'>Office hours</h2>
 
-        <p>I welcome you to use my office hours to discuss the proseminar, UW Linguistics, research, academia, mental health, life&mdash;<em>anything</em>. I will hold a mixture of in-person and virtual office hours this quarter:</p>
+        <p>I welcome you to use my office hours to discuss the proseminar, UW Linguistics, research, academia, mental health, life&mdash;<em>anything</em>. I will hold a mixture of virtual and in-person office hours this quarter:</p>
 
         <ul>
-          <li>I will host <strong>in-person office hours on Tuesdays</strong> from 1:00 to 2:00 PM at rotating locations on campus, demonstrating an inclusive teaching tip suggested by Dr. Anne H. Charity Hudley at a UW Linguistics colloquium in Spring 2021. She recommended hosting office hours in non-intimidating spaces like libraries and coffee shops&mdash;spots that students <em>already</em> frequent. Please check the <a href='#autumn'>schedule</a> for an up-to-date list of "Tuesday <abbr title='Office Hours'>OH</abbr>" locations (i.e., places on campus where you can find coffee).</li>
+          <li>I will host <strong>virtual office hours on Mondays</strong> from 3:30 to 4:30 PM, accessible via <a href='https://canvas.uw.edu/courses/1517295/external_tools/95443'>Zoom</a>.</li>
 
-          <li>I will also host <strong>virtual office hours on Thursdays</strong> from 1:00 to 2:00 PM, accessible through the <a href='https://canvas.uw.edu/courses/1480438/external_tools/95443'>Zoom feature on Canvas</a>.</li>
+          <li>I will also host <strong>in-person office hours on Tuesdays</strong> from 2:00 to 3:00 PM at rotating locations on campus, demonstrating an inclusive teaching tip suggested by Dr. Anne H. Charity Hudley at a UW Linguistics colloquium in Spring 2021. She recommended hosting office hours in non-intimidating spaces like libraries and coffee shops&mdash;spots that students <em>already</em> frequent. Please check the <a href='#winter'>schedule</a> for an up-to-date list of "Tuesday <abbr title='Office Hours'>OH</abbr>" locations (i.e., places on campus where you can find coffee).</li>
         </ul>
 
         <p>If, at any point, you would prefer to meet with me outside of my usual office hours, please do reach out to set up an appointment.</p>
@@ -273,13 +290,13 @@
                   <a href='https://hfs.uw.edu/Eat/dining-hours/Mary-Gates-Hall-Espresso'>Mary Gates Hall Espresso</a>
                   + <a href='https://eventservices.uw.edu/spaces-2/multi-purpose/mary-gates-commons/'>Commons</a>
                   (<a href='https://www.washington.edu/maps/#!/mgh'>MGH</a>)
-                  <!-- Reboot Café
-                  (<a href='https://www.washington.edu/maps/#!/cse'>CSE</a>) -->
                 </td>
               </tr>
               <tr class='assignment'>
                 <td></td>
-                <td colspan='3'>Assignment: 11/2 panel questions due <strong> Oct 28</strong></td>
+                <td>Assignment: 11/2 panel questions due <b>Thurs, Oct 28</b></td>
+                <td></td>
+                <td></td>
               </tr>
               <!-- week 6 -->
               <tr class='white-border'>
@@ -299,7 +316,9 @@
               </tr>
               <tr class='assignment'>
                 <td></td>
-                <td colspan='3'>Assignment: 11/9 panel questions due <strong> Nov 4</strong></td>
+                <td>Assignment: 11/9 panel questions due <b>Thurs, Nov 4</b></td>
+                <td></td>
+                <td></td>
               </tr>
               <!-- week 7 -->
               <tr class='white-border'>
@@ -319,7 +338,9 @@
               </tr>
               <tr class='assignment'>
                 <td></td>
-                <td colspan='3'>Assignment: "External funding application" due <strong> Nov 11</strong></td>
+                <td>Assignment: "External funding application" due <b>Thurs, Nov 11</b></td>
+                <td></td>
+                <td></td>
               </tr>
               <!-- week 8 -->
               <tr class='white-border'>
@@ -340,7 +361,9 @@
               </tr>
               <tr class='assignment'>
                 <td></td>
-                <td colspan='3'>Assignment: "IRB 101" due <strong> Nov 18</strong></td>
+                <td>Assignment: "IRB 101" due <b>Thurs, Nov 18</b></td>
+                <td></td>
+                <td></td>
               </tr>
               <!-- week 9 -->
               <tr>
@@ -382,8 +405,6 @@
                   </span>
                 </td>
                 <td>
-                  <!-- <a href='https://hfs.uw.edu/Eat/dining-hours/Starbucks-Coffee-Suzzallo'>Starbucks</a>
-                  (<a href='https://www.washington.edu/maps/#!/suz'>SUZ</a>) -->
                   <span class='attn'>
                     <span class='strike'>Starbucks (SUZ)</span>
                     Zoom
@@ -392,15 +413,17 @@
               </tr>
               <tr class='assignment'>
                 <td></td>
-                <td colspan='3'>Assignment: 12/7 panel questions due <strong>Dec 2</strong></td>
+                <td>Assignment: 12/7 panel questions due <b>Thurs, Dec 2</b></td>
+                <td></td>
+                <td></td>
               </tr>
               <!-- week 11 -->
               <tr>
                 <td>Dec 7</td>
                 <td>
-                  <b>Student panel: What I wish I knew when I started graduate school (+Defying the requirements)</b>
+                  <b>Student panel: What I wish I knew when I started graduate school<br/>(+ Defying the requirements)</b> <!-- TODO -->
                   <br/>
-                  Panelists: Ben Jones, Ella Deaton, Emily Ahn, &#38; Sara Ng
+                  Panelists: Angie McMillan-Major, Ben Jones, Ella Deaton, Emily Ahn, &#38; Sara Ng
                   <br/>
                   [<a href='https://drive.google.com/file/d/1AqyoyG0mYtwTd0d-YU7kxt_DtYzwoiEh/view?usp=sharing'>slides</a>]
                 </td>
@@ -415,14 +438,170 @@
         </div>
 
         <!-- winter -->
-        <!-- <div id='winter'>
+        <div id='winter'>
           <h1 class='anchor'>Winter</h1>
-        </div> -->
 
-        <!-- spring -->
-        <!-- <div id='spring'>
-          <h1 class='anchor'>Spring</h1>
-        </div> -->
+          <table class='table table-sm'>
+            <thead>
+              <tr class='align-top'>
+                <th scope='col' class='date-col'>Date</th>
+                <th scope='col' class='topic-col'>Topic</th>
+                <th scope='col' class='location-col'>Location</th>
+                <th scope='col' class='tues-oh-col'>Tuesday <abbr title='Office Hours'>OH</abbr></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- week 1 -->
+              <tr>
+                <td>Jan 4</td>
+                <td>
+                  <b>Introduction</b>
+                  <!-- <br/> -->
+                  <!-- [<a href='#'>slides</a>] -->
+                </td>
+                <td>Zoom</td>
+                <td>Zoom</td>
+              </tr>
+              <!-- week 2 -->
+              <tr class='white-border'>
+                <td>Jan 11</td>
+                <td>
+                  <b>Work-life balance</b>
+                  <!-- <br/> -->
+                  <!-- [<a href=''>slides</a>] -->
+                </td>
+                <td>ECE 042</td>
+                <td>
+                  <a href='https://www.lib.washington.edu/suzzallo/study/studyroompolicies'>Study Room 333</a>
+                  (<a href='https://www.washington.edu/maps/#!/suz'>SUZ</a>)
+                </td>
+              </tr>
+              <tr class='assignment'>
+                <td></td>
+                <td>Reading</span>: <a href='https://psyche.co/guides/how-to-rest-well-and-enjoy-a-more-creative-sustainable-life'>How to rest well (Pang 2021)</a></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <!-- week 3 -->
+              <tr class='white-border'>
+                <td>Jan 18</td>
+                <td>
+                  <b>Technological resources</b>
+                  <!-- <br/> -->
+                  <!-- [<a href=''>slides</a>] -->
+                </td>
+                <td>TBA</td>
+                <td>
+                  <!-- office hours -->
+                </td>
+              </tr>
+              <tr class='assignment'>
+                <td></td>
+                <td>Assignment: "Calendaring downtime" due by <b>3:30 PM</b></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <!-- week 4 -->
+              <tr class='white-border'>
+                <td>Jan 25</td>
+                <td>
+                  <b>Hobby show-and-tell</b>
+                  <br/>
+                  [<a href='https://docs.google.com/presentation/d/1tBEN6h4zA6GrIzkgqDXbtcbyxCiIIlPEwy1w3x3DHgU/edit'>hobby slides</a> <i class='bi bi-lock-fill'></i>]
+                </td>
+                <td>ECE 042</td>
+                <td>
+                  <!-- office hours -->
+                </td>
+              </tr>
+              <tr class='assignment'>
+                <td></td>
+                <td>Assignment: "Hobby show-and-tell" due by <b>3:30 PM</b></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <!-- week 5 -->
+              <tr>
+                <td>Feb 1</td>
+                <td>
+                  <b>TBA</b>
+                  <br/>
+                  <!-- [<a href=''>slides</a>] -->
+                </td>
+                <td>TBA</td>
+                <td>
+                  <!-- office hours -->
+                </td>
+              </tr>
+              <!-- week 6 -->
+              <tr>
+                <td>Feb 8</td>
+                <td>
+                  <b>TBA</b>
+                  <br/>
+                  <!-- [<a href=''>slides</a>] -->
+                </td>
+                <td>TBA</td>
+                <td>
+                  <!-- office hours -->
+                </td>
+              </tr>
+              <!-- week 7 -->
+              <tr>
+                <td>Feb 15</td>
+                <td>
+                  <b>TBA</b>
+                  <br/>
+                  <!-- [<a href=''>slides</a>] -->
+                </td>
+                <td>TBA</td>
+                <td>
+                  <!-- office hours -->
+                </td>
+              </tr>
+              <!-- week 8 -->
+              <tr>
+                <td>Feb 22</td>
+                <td>
+                  <b>TBA</b>
+                  <br/>
+                  <!-- [<a href=''>slides</a>] -->
+                </td>
+                <td>TBA</td>
+                <td>
+                  <!-- office hours -->
+                </td>
+              </tr>
+              <!-- week 9 -->
+              <tr>
+                <td>Mar 1</td>
+                <td>
+                  <b>TBA</b>
+                  <br/>
+                  <!-- [<a href=''>slides</a>] -->
+                </td>
+                <td>TBA</td>
+                <td>
+                  <!-- office hours -->
+                </td>
+              </tr>
+              <!-- week 10 -->
+              <tr>
+                <td>Mar 8</td>
+                <td>
+                  <b>TBA</b>
+                  <br/>
+                  <!-- [<a href=''>slides</a>] -->
+                </td>
+                <td>TBA</td>
+                <td>
+                  <!-- office hours -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
       </div>
 
       <hr class='divide'/>
@@ -450,7 +629,7 @@
           <li>
             <b>UW teaching resources</b>
             <ul>
-              <li><a href='https://teaching.washington.edu/'>Center for Teaching and Learning (CTL)</a></li>
+              <li><a href='https://teaching.washington.edu/'>Center for Teaching and Learning (CTL)</a>, including:</li>
               <ul>
                 <li><a href='https://teaching.washington.edu/topics/just-for-tas/'>Just for TAs: Information and resources</a></li>
                 <li><a href='https://teaching.washington.edu/topics/inclusive-teaching/inclusive-teaching-at-uw/'>Inclusive teaching</a></li>
@@ -466,15 +645,22 @@
             </ul>
           </li>
           <li>
-            <b>Responding to reviews</b>
+            <b>Reading & writing</b>
             <ul>
-              <li><a href='http://coling2018.org/index.html%3Fp=1335.html'>PC chairs report back: On the effectiveness of author response</a> (COLING 2018) &ndash; <span class='attn'>NEW</span></li>
+              <li><a href='http://www.jedbrubaker.com/wp-content/uploads/2010/10/howtoread.pdf'>How to read a book: Strategies for getting the most out of non-fiction reading</a> (Edwards 2005) &ndash; <span class='attn'>NEW</span></li>
+              <li><a href='https://lithub.com/how-academics-survive-the-writing-grind-some-anecdotal-advice/'>How academics survive the writing grind: Some anecdotal advice</a> (Sword 2017) &ndash; <span class='attn'>NEW</span></li>
             </ul>
           </li>
           <li>
-            <b>Fellowships & awards</b>
+            <b>Responding to review(er)s</b>
             <ul>
-              <li><span class='attn'>Check out our <a href='/uw/ling-proseminar/funding'>599B funding page</a>!</span>
+              <li><a href='http://coling2018.org/index.html%3Fp=1335.html'>PC chairs report back: On the effectiveness of author response</a> (COLING 2018)</li>
+            </ul>
+          </li>
+          <li>
+            <b>More resources for PhD students</b>
+            <ul>
+              <li><a href='https://www.nature.com/collections/dhbegcaieb/'>Career resources for PhD students</a> (amassed by Nature) &ndash; <span class='attn'>NEW</span></li>
             </ul>
           </li>
           <li>

@@ -8,7 +8,8 @@
     offset: 120
   });
 
-  adjustScroll()
+  adjustScroll();
+  jumpToSchedule();
 
   function adjustScroll() {
     // adjust scroll to sections not included in the navbar
@@ -37,4 +38,14 @@
       } 
     });
   }
+
+  function jumpToSchedule() {
+    $( '#navbarDropdown' ).dblclick(function() {
+      // double click to go straight to the current schedule
+      // (skipping the dropdown)
+      window.location.hash = '#winter'
+    });
+  }
+
+
 })();
