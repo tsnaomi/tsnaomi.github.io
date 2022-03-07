@@ -306,8 +306,12 @@ abbr:hover{
   color: #87bfff; /* french sky blue */
 }
 
+.spring,
 #spring a {
   color: #7AB262; /* google doc green */
+  color: #44AA5E;
+  color: #50B65E;
+  color: #59b115;
 }
 
 #spring a:hover {

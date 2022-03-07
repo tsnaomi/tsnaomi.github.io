@@ -43,7 +43,7 @@
     $( '#navbarDropdown' ).dblclick(function() {
       // double click to go straight to the current schedule
       // (skipping the dropdown)
-      window.location.hash = '#winter'
+      window.location.hash = '#spring'
     });
   }
 
