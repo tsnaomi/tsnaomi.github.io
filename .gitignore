@@ -4,4 +4,5 @@ server.py
 .jshintrc
 .DS_Store
 
+__*
 images/misc
