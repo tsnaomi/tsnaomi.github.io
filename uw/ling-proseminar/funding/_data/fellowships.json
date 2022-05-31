@@ -84,20 +84,6 @@
         "added": "11/2021"
     },
     {
-        "//": "Facebook Fellowship Program",
-        "name": "<a href='https://research.fb.com/fellowship/' target='_blank'>Facebook Fellowship Program</a>",
-        "type": "Industry",
-        "focus": "Comp sci",
-        "eligibility": "--",
-        "intl": "Yes",
-        "support": "$42k/yr stipend + tuition",
-        "duration": "1-2 yr",
-        "stage": "Any/late",
-        "deadline": "09/30",
-        "notes": "Awarded to doctoral students engaged in innovative and relevant research in areas related to computer science and engineering. While open to students in any year of PhD study, a heavy emphasis on research and publication record for Facebook Fellowships favor students who are further along in their program.",
-        "added": "10/2021"
-    },
-    {
         "//": "Ford Foundation Dissertation Fellowship",
         "name": "<a href='https://sites.nationalacademies.org/pga/fordfellowships/pga_171939'>Ford Foundation Dissertation Fellowship</a>",
         "type": "Org",
@@ -224,6 +210,48 @@
         "added": "11/2021"
     },
     {
+        "//": "Jacobs Research Fund & Kinkade Language and Culture Fund",
+        "name": "<a href='https://depts.washington.edu/jacobsf/index.php' target='_blank'>Jacobs Research Funds (JRF) and Kinkade Language &amp; Culture Fund (KLF)</a>",
+        "type": "UW",
+        "focus": "Fieldwork, documentation, revitalization",
+        "eligibility": "--",
+        "intl": "Yes",
+        "support": "Based on proposed budget (up to $9k)",
+        "duration": "1 yr",
+        "stage": "Any",
+        "deadline": "02/15",
+        "notes": "The Jacobs Research Funds (JRF) and the Kinkade Language and Culture Fund (KLF) are sister organizations that fund linguistic and anthropological research on aboriginal peoples of North and South America. The JRF accepts proposals on behalf of both organizations. Priority is given to research on the Pacific Northwest. Allowed expenses include consultants, research assistants, travel, accommodation, and equipment. Disallowed expenses include researcher salaries, tuition, per diems, food, institutional overhead, and administration.",
+        "added": "6/2022"
+    },
+    {
+        "//": "Language Legacies Grant",
+        "name": "<a href='http://www.endangeredlanguagefund.org/language-legacies.html' target='_blank'>Language Legacies Grant</a>",
+        "type": "Org",
+        "focus": "Fieldwork",
+        "eligibility": "--",
+        "intl": "Yes",
+        "support": "Based on proposed budget (up to $4k)",
+        "duration": "1 yr",
+        "stage": "Any",
+        "deadline": "03/18",
+        "notes": "Provided by the <a href='http://www.endangeredlanguagefund.org/'>Endangered Language Fund</a>, the Language Legacies grant program supports documentation and revitalization efforts throughout the world. It is open to community members and researchers from any country (with the exception of those who are eligible for the <a href='http://www.endangeredlanguagefund.org/native-voices-endowment.html'>Native Voices Endowment</a> grants). An academic degree is not required, but the application must provide evidence that the applicant can achieve the stated goals.",
+        "added": "6/2022"
+    },
+    {
+        "//": "Meta Research PhD Fellowship",
+        "name": "<a href='https://research.fb.com/fellowship/' target='_blank'>Meta Research PhD Fellowship</a>",
+        "type": "Industry",
+        "focus": "Comp sci",
+        "eligibility": "--",
+        "intl": "Yes",
+        "support": "$42k/yr stipend + tuition",
+        "duration": "1-2 yr",
+        "stage": "Any/late",
+        "deadline": "09/30",
+        "notes": "Awarded to doctoral students engaged in innovative and relevant research in areas related to computer science and engineering. While open to students in any year of PhD study, a heavy emphasis on research and publication record for Facebook Fellowships favor students who are further along in their program.",
+        "added": "10/2021"
+    },
+    {
         "//": "Mellon/ACLS Dissertation Completion Fellowship",
         "name": "<a href='https://www.acls.org/Competitions-and-Deadlines/Mellon-ACLS-Dissertation-Completion-Fellowships'>Mellon/ACLS Dissertation Completion Fellowship</a>",
         "type": "Org",
@@ -318,8 +346,36 @@
         "duration": "2-4 yrs",
         "stage": "Any",
         "deadline": "10/29",
-        "notes": "Supports full-time PhD students focused on artificial intelligence or machine learning. The programs seeks to support a small group of the most promising PhD students in AI and ML who are interested in research that makes it less likely that <a href='https://www.openphilanthropy.org/blog/potential-risks-advanced-artificial-intelligence-philanthropic-opportunity' target='_blank'>advanced AI systems pose a global catastrophic risk</a>. Fellows will be funded through the end of the 5th year of their PhD",
+        "notes": "Supports full-time PhD students focused on artificial intelligence or machine learning. The programs seeks to support a small group of the most promising PhD students in AI and ML who are interested in research that makes it less likely that <a href='https://www.openphilanthropy.org/blog/potential-risks-advanced-artificial-intelligence-philanthropic-opportunity' target='_blank'>advanced AI systems pose a global catastrophic risk</a>. Fellows will be funded through the end of the 5th year of their PhD.",
         "added": "11/2021"
+    },
+    {
+        "//": "Phillips Fund for Native American Research",
+        "name": "<a href='https://www.amphilsoc.org/grants/phillips-fund-native-american-research#:~:text=The%20Phillips%20Fund%20of%20the,continental%20United%20States%20and%20Canada.' target='_blank'>Phillips Fund for Native American Research</a>",
+        "type": "Org",
+        "focus": "Fieldwork, documentation, revitalization",
+        "eligibility": "--",
+        "intl": "Yes",
+        "support": "Based on proposed budget (up to $3.5k)",
+        "duration": "1 yr",
+        "stage": "Any",
+        "deadline": "03/01",
+        "notes": "The Phillips Fund of the American Philosophical Society provides grants for research in Native American linguistics, ethnohistory, and the history of studies of Native Americans, in the continental United States and Canada. The grants are intended for such costs as travel, audio and video recordings, and consultants' fees.",
+        "added": "6/2022"
+    },
+    {
+        "//": "Sharing Language Diversity Fellowship",
+        "name": "<a href='http://www.endangeredlanguagefund.org/sldf.html' target='_blank'>Sharing Language Diversity Fellowship</a>",
+        "type": "Org",
+        "focus": "Fieldwork, documentation, revitalization",
+        "eligibility": "Completed at least 2-years of graduate studies",
+        "intl": "Yes",
+        "support": "Based on proposed budget (up to $30k)",
+        "duration": "1 yr",
+        "stage": "Any",
+        "deadline": "05/15",
+        "notes": "Provided by the <a href='http://www.endangeredlanguagefund.org/'>Endangered Language Fund</a>,is meant to support the research of Ph.D. students who have completed two years of study in a graduate program in Linguistics and related disciplines, and who are engaged in the documentation of Indigenous languages and the archiving of linguistic data as part of their PhD graduate studies. The primary purpose of this fellowship is to encourage emerging linguists, in collaboration with their Indigenous partners, to responsibly share annotated materials in a sustainable public forum for equitable access to ongoing and finished research, both for community members and for other scholars.",
+        "added": "6/2022"
     },
     {
         "//": "UW Presidential Dissertation Fellowship",
