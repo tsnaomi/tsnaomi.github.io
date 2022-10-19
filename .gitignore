@@ -5,4 +5,5 @@ server.py
 .DS_Store
 
 __*
-images/misc
+_images/misc
+_images/about-*.png

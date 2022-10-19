@@ -58,7 +58,10 @@ a:hover span,
 .nav:hover {
   color: #92a8d1;
   /*color: #7882FF;*/
-  /*color: #036240;*/
+  /*color: #689bfb;*/
+  /*color: #FF97C1;*/
+  /*color: #ff83b5;*/
+  /*color: #d20055;*/
 }
 
 br {
@@ -74,6 +77,7 @@ br {
   font-family: Apercu Mono;
 }
 
+/*.nts-author,*/
 .bold {
   font-family: 'Helvetica Neue Medium';
 }
