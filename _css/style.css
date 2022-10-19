@@ -56,11 +56,10 @@ a:hover,
 a:hover span,
 .about:hover,
 .nav:hover {
-  color: #92a8d1;
+  /*color: #92a8d1;*/
   /*color: #7882FF;*/
   /*color: #689bfb;*/
-  /*color: #FF97C1;*/
-  /*color: #ff83b5;*/
+  color: #FF97C1;
   /*color: #d20055;*/
 }
 
