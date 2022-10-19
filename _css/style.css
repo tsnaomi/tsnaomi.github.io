@@ -52,15 +52,18 @@ a,
   cursor: url(./cursors/aerowedge.cur), pointer;
 }
 
+/* eventually, rainbows! */
 a:hover,
 a:hover span,
 .about:hover,
 .nav:hover {
   /*color: #92a8d1;*/
+  color: #98ACF8;
   /*color: #7882FF;*/
   /*color: #689bfb;*/
-  color: #FF97C1;
+  /*color: #FF97C1;*/
   /*color: #d20055;*/
+  /*color: #1fd3c5;*/
 }
 
 br {
