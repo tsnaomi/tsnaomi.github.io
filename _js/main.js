@@ -36,7 +36,7 @@
 
     $nav.on('click', function() {
       transition('#' + sect);             // scroll to div
-      if (sect == 'about') { decode() }   // render about deets
+      // if (sect == 'about') { decode() }   // render about deets
     });
   }
 
